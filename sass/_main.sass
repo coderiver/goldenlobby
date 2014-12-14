@@ -1,216 +1,381 @@
 // Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.out
+	width: 1240px
+	margin: 0 auto
+	color: #fff
+
+.header
+	+png(header-bg)
+	position: fixed
+	top: 0px	
+	z-index: 700
+
+	.logo
+		margin-left: 55px
+		margin-top: 30px
+		float: left
+
+	.header__nav
+		float: left
+		font-family: tahoma, arial, sans-serif
+		font-size: 18.5px
+		font-weight: bold		
+		+png(nav-bg)
+		margin-top: 83px
+		margin-left: 40px
+		
+		li:after
+			content: ''
+			+s(navitem-light)
+			position: absolute
+			bottom: -45px			
+
+		li
+			float: left
+			padding-top: 14px
+			text-align: center
+			position: relative			
+
+			a
+				color: #fff
+				text-decoration: none			
+
+			a:hover
+				color: #ffb10b
+
+		.nav-slots
+			width: 250px
+
+		.nav-slots:after
+			left: 83px
+		
+		.nav-faq
+			width: 199px		
+
+		.nav-faq:after
+			left: 58px
+
+		.nav-contacts
+			width: 270px
+
+		.nav-contacts:after
+			left: 94px
+
+.content
+	background: #131313
+	margin-top: 200px
+	position: relative
+	padding: 48px 100px
+
+.caption		
+	background: rgba(0, 0, 0, 0.75)
+	height: 94px
+	width: 100%
+	position: absolute
+	top: 0px
+	z-index: 100
+	border: 1px solid #110b03
+
+	.container
+		border: 1px solid #645e56
+		height: 100%
+
+.divider
+	height: 1px
+	border-top: 1px solid #2b2b2b
+	border-bottom: 1px solid #000
+
+.slider
+	position: relative
+	margin-bottom: 48px		
+
+	.slider__character
+		position: absolute
+		right: -37px
+		top: 84px
+		z-index: 200
+
+	.slider__play
+		+museosans
+		background: #ffb20a
+		padding: 4px 62px
+		font-size: 22px
+		color: #fff
+		text-decoration: none
+		border-radius: 5px
+		box-shadow: 1px 1px 2px #877c5a
+		position: absolute
+		right: 230px
+		top: 280px
+		z-index: 200		
+
+	.slider__play:hover
+		background: #e09b03
+
+	#next, #prev
+		display: block
+		position: absolute
+		top: 310px
+		z-index: 300
+
+	#prev
+		+s(slide-prev)
+		left: -8px
+
+	#next
+		+s(slide-next)
+		right: -12px	
+
+.unveiled
+	margin-top: 48px
+	margin-bottom: 48px
+	position: relative
+
+.slots
+	margin-top: 40px
+	margin-bottom: 40px	
+	text-align: right	
+
+	span
+		+geosansL		
+		font-size: 50px
+		text-transform: uppercase
+		margin-right: 40px
+
+	a
+		+museosans
+		font-size: 22px		
+		padding: 5px 42px
+		background: #ffb20a
+		text-decoration: none
+		border-radius: 5px
+		color: #fff
+		float: right		
+		margin-top: 15px
+		margin-right: 255px
+
+	a:hover
+		background: #e09b03
+
+.bigslider
+	margin-top: 10px
+	margin-bottom: 48px
+	position: relative
+
+	.bigslider__block		
+		text-align: center
+
+		.bigslider__item
+			width: 335px
+			display: inline-block
+			margin-top: 35px
+			text-align: center
+			position: relative
+
+			a				
+				+s(play)
+				display: block
+				position: absolute
+				bottom: 0px
+				left: 65px
+
+		.is-margin-r
+			margin-right: 14px
+
+	#big-next, #big-prev
+		display: block
+		position: absolute
+		top: 51%
+		z-index: 300
+
+	#big-prev
+		+s(slide-prev)
+		left: 0px
+
+	#big-next
+		+s(slide-next)
+		right: 0px
+
+.fc
+	margin-top: 45px	
+	margin-bottom: 45px		
+	overflow: hidden
+
+	.fc__header
+		+geosansL
+		font-size: 50px
+		margin-bottom: 45px	
+
+		.fc__faq
+			margin-left: 210px
+			margin-right: 335px	
+
+	.fc__container
+		margin-top: 30px
+		display: table-row
+
+		.faq
+			width: 470px			
+			padding: 35px 45px 15px 0px
+			border-right: 1px solid #000			
+			display: table-cell
+			
+			p
+				+helvneue
+				font-size: 16.7px
+				margin-bottom: 12px
+				line-height: 21px
+				font-variant: small-caps
+				margin-top: -16px			
+
+			a
+				+museosans
+				background: #ffb20a
+				padding: 4px 76px
+				font-size: 21.7px
+				color: #fff
+				text-decoration: none
+				border-radius: 5px	
+				text-shadow: 0px -1px 2px #b49448			
+
+			a:hover
+				background: #e09b03
+
+		.contacts
+			margin-left: 1px
+			padding-left: 48px			
+			border-left: 1px solid #2b2b2b			
+			display: table-cell
+			width: 477px
+			padding-top: 20px
+			
+			.contacts__field
+				margin-bottom: 30px				
+				+helvneue
+				font-size: 16.7px
+				position: relative
+
+				label
+					line-height: 35px					
+
+				.is-arrow
+					display: block
+					+s(arrow-down)
+					position: absolute
+					top: 14px
+					left: 74px
+
+				input
+					+helvneue
+					font-size: 16.7px
+					width: 332px
+					height: 35px					
+					margin-left: 40px		
+					padding-left: 10px
+					padding-right: 10px
+					position: absolute
+					right: 0px
+
+				textarea
+					width: 100%
+					height: 208px
+					margin-top: 15px
+
+.navigation
+	overflow: hidden
+	margin-top: 45px
+
+	.is-margin-r
+		margin-right: 52px
+
+	.navigation__block	
+		float: left
+		width: 312px
+
+		.navigation__header
+			+geosansL
+			font-size: 29.7px			
+			text-transform: uppercase
+			border-bottom: 1px solid #0d0d0d
+			padding-bottom: 15px
+			position: relative
+			padding-left: 10px
+
+		.icon-mouse:after
+			content: ''
+			+s(mouse)
+			position: absolute
+			top: 4px
+			right: 17px
+
+		.icon-envelope:after
+			content: ''
+			+s(envelope)
+			position: absolute
+			top: 9px
+			right: 17px
+
+		.icon-upd:after
+			content: ''
+			+s(upd)
+			position: absolute
+			top: 9px
+			right: 17px
+
+		.navigation__container
+			margin-top: 1px
+			border-top: 1px solid #2b2b2b
+			padding-top: 22px
+			color: #acaba2
+			padding-left: 10px
+
+			.is-margin-r
+				margin-right: 38px
+
+			ul
+				float: left				
+				+museosans
+				font-size: 13.7px				
+				
+				li
+					margin-bottom: 15px
+
+					a
+						color: #acaba2
+						text-decoration: none
+
+					a:hover
+						text-decoration: underline
+
+			.name
+				text-transform: uppercase
+				margin-bottom: 35px
+				font-size: 17.7px
+
+			.email
+				font-size: 13.7px
+
+.seotext
+	+helvneue
+	font-size: 16.7px	
+	font-variant: small-caps
+	margin-top: 35px
+
+.footer
+	text-align: center
+	margin-top: 35px
+	padding-bottom: 38px
+	clear: both
+
+	.footer__copy
+		margin-bottom: 33px
+	
+	.icon-up
+		display: block
+		+s(up)
+		margin-left: 595px
+
+.light
+	+png(light-bg)	
+	position: absolute
+	top: 208px	

@@ -1,12 +1,78 @@
+// responsive example, edit or remove
 
-// width
+// $breaksmall: 500px
+
+// $breaklarge: 1180px
+
+// =r($media)
+// 	@if $media == pda
+// 		// narrower than $width
+// 		@media only screen and (max-width: $breaksmall)
+// 			@content
+// 	@else if $media == wide
+// 		// wider than $width
+// 		@media only screen and (min-width: $breaklarge)
+// 			@content
+
+// responsive example, edit or remove
+// just write +r(w1280)
+// $min1920: 1920px
+// $w1280: 1280px
+// $w1270: 1270px
+// $w1024: 1024px
+// $w900: 900px
+// $w860: 860px
+// $w800: 800px    
+// $w760: 760px
+// $w640: 640px
+// $w560: 560px
+// $w480: 480px
+// $w360: 360px
+// $w320: 320px
+
+// =r($media)
+// 	@if $media == w1280
+// 		@media only screen and (max-width: $w1280)
+// 			@content
+// 	@if $media == w1270
+// 		@media only screen and (max-width: $w1270)
+// 			@content
+// 	@if $media == w1024
+// 		@media only screen and (max-width: $w1024)
+// 			@content
+// 	@if $media == w900
+// 		@media only screen and (max-width: $w900)
+// 			@content
+// 	@if $media ==w860
+// 		@media only screen and (max-width: $w860)
+// 			@content
+// 	@if $media == w800
+// 		@media only screen and (max-width: $w800)
+// 			@content
+// 	@if $media == w760
+// 		@media only screen and (max-width: $w760)
+// 			@content
+// 	@if $media == w640
+// 		@media only screen and (max-width: $w640)
+// 			@content
+// 	@if $media == w560
+// 		@media only screen and (max-width: $w560)
+// 			@content
+// 	@if $media == w480
+// 		@media only screen and (max-width: $w480)
+// 			@content
+// 	@if $media == w360
+// 		@media only screen and (max-width: $w360)
+// 			@content 
+// 	@if $media == w320
+// 		@media only screen and (max-width: $w320)
+// 			@content
+// 	@if $media == min1920
+// 		@media only screen and (min-width: $min1920)
+// 			@content
+
 =r($width)
-	@media only screen and (max-width: $width+ "px")
-		@content
-
-// height
-=rh($height)
-	@media only screen and (max-height: $height + "px")
+	@media only screen and (max-width: $width+'px')
 		@content
 
 =fs($sizeValue: 16)
@@ -23,23 +89,6 @@
 	*display: inline
 	*zoom: 1
 
-%pseudo
-	position: relative
-	&:before,&:after
-		content: ' '
-		position: absolute
-		top: 0
-		left: 0
-=pseudo
-	@extend %pseudo
-
-=coverdiv
-	position: absolute
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%    
-	
 =cover
 	background-repeat: no-repeat
 	background-size: cover
@@ -49,21 +98,14 @@
 	-moz-background-size: $width $height
 	-webkit-background-size: $width $height
 	background-size: $width $height 
-	
-// retina, also available as +hdpi
+// retina bg
 =retina
 	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
 		@content
 
 =box
 	+box-sizing(border-box)
-// vertical-align at center
-=vcenter
-	position: absolute
-	top: 50%
-	left: 50%
-	+translate(-50%,-50%)  
-	
+
 //simple gradient
 =g($color1, $color2)
 	+background-image(linear-gradient($color1, $color2))
@@ -76,10 +118,10 @@
 	@font-face
 		font-family: $alias
 		src: url("fonts/" + $name + ".eot")
-		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".woff2") format("woff2"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
+		src: url("fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("fonts/" + $name + ".woff") format("woff"), url("fonts/" + $name + ".ttf") format("truetype")
 		font-weight: normal
 		font-style: normal
-// usage: 
+
 //+font(black, cytiapro-black-webfont)
 
 // ROTATE
@@ -113,18 +155,12 @@
 
 =justify
 	text-align: justify
-	line-height: 0
 	font-size: 0
-	text-justify: newspaper
-	zoom: 1
-	text-align-last: justify
 	&:after
 		content: ""
 		display: inline-block
 		width: 100%
-		height: 0px
-		visibility: hidden
-		overflow: hidden
+		height: 0
 =vertical
 	text-align: center
 	font-size: 0
@@ -214,6 +250,7 @@
 		@content
 	& ::-moz-selection
 		@content
+
 =sel
 	+selection
 
@@ -271,10 +308,10 @@
 	@if $direction == bl
 		border-width: $width + px 0 0 $height + px
 		border-color: transparent transparent transparent $bg
+
 // example
 // +arr(500,50, #000, l)
 // +arr(500,50, #000, bl)
-
 =rotate($var)
 	-ms-transform: rotate($var+deg)
 	-webkit-transform: rotate($var+deg)
