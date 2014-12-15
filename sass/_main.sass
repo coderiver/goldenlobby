@@ -2,16 +2,18 @@
 .out	
 	color: #fff
 	position: relative	
-	width: 65%
+	width: 62%
 	min-width: 820px	
 	margin: 0 auto
 
 .header	
-	background: url(../img/header-bg.png) 50% 50%
+	background: url(../img/header-bg.png)
 	height: 223px
 	z-index: 700	
 	position: fixed
-	width: 65%
+	width: 62%
+	min-width: 820px
+	overflow: hidden
 
 	.logo
 		margin-left: 55px
@@ -19,14 +21,13 @@
 		float: left
 
 	.header__nav
-		float: left
+		position: absolute
+		top: 83px
+		left: 360px
 		font-family: tahoma, arial, sans-serif
 		font-size: 18.5px
-		font-weight: bold		
-		background: url(../img/nav-bg.png) 50% top no-repeat
-		width: 55%
-		margin-top: 83px
-		margin-left: 5%
+		font-weight: bold
+		+png(nav-bg)
 		
 		li:after
 			content: ''
@@ -35,39 +36,42 @@
 			bottom: -45px			
 
 		li
-			float: left
-			padding-top: 14px
+			display: inline-block			
 			text-align: center
 			position: relative			
 
 			a
 				color: #fff
-				text-decoration: none			
+				text-decoration: none
+				display: block	
+				padding-top: 14px			
 
 			a:hover
 				color: #ffb10b
 
 		.nav-slots
-			padding-left: 15%
-			padding-right: 15%
+			width: 270px			
 			background: url(../img/icons/nav-border.png) right 2px no-repeat
 
 		.nav-slots:after
-			left: 32%
+			left: 91px
 		
 		.nav-faq
-			padding-left: 12%
-			padding-right: 12%
+			width: 194px
 			background: url(../img/icons/nav-border.png) right 2px no-repeat
 
 		.nav-faq:after
-			left: 28%
+			left: 53px
 
 		.nav-contacts
-			padding-left: 14%
+			width: 280px
+
+			a
+				text-align: left
+				padding-left: 75px
 
 		.nav-contacts:after
-			right: 0
+			left: 75px
 
 .content
 	background: #131313	
@@ -193,12 +197,22 @@
 			margin-left: 6px
 			margin-right: 6px
 
-			a				
-				+s(play)
+			a	
 				display: block
 				position: absolute
 				bottom: 0px
-				left: 65px
+				left: 62px
+				color: #fff
+				+museosans
+				font-weight: bold
+				font-size: 20px
+				width: 210px
+				height: 34px
+				padding-top: 6px
+				background: linear-gradient(to right, #444, #111)
+
+			a:hover
+				color: #ffb10b
 
 	#big-next, #big-prev
 		display: block
@@ -227,7 +241,7 @@
 
 		.fc__faq
 			margin-left: 18%
-			margin-right: 30%	
+			margin-right: 36%	
 
 	.fc__container
 		margin-top: 30px
@@ -308,7 +322,7 @@
 	margin-top: 45px
 
 	.is-margin-r
-		margin-right: 52px
+		margin-right: 4%
 
 	.navigation__block	
 		float: left
@@ -354,7 +368,7 @@
 			padding-left: 10px
 
 			.is-margin-r
-				margin-right: 38px
+				margin-right: 8%
 
 			ul
 				float: left				
@@ -407,16 +421,19 @@
 .userbox
 	position: fixed
 	top: 248px
-	left: 85%
+	left: 83.5%
+	width: 14%
+	min-width: 200px
+	z-index: 700
 	
 	.userbox__login		
-		+png(login-bg)		
-		padding-top: 25px
+		background: url(../img/login-bg.png) no-repeat
+		height: 137px
+		padding-top: 5px
 		text-align: center
 		display: block
-
-		li
-			margin-bottom: 31px			
+		width: 94%
+		background-size: 100% 87%		
 
 		a
 			+geosansL
@@ -424,6 +441,9 @@
 			color: #fff
 			text-transform: uppercase
 			font-weight: bold
+			display: block
+			height: 39px
+			padding-top: 15px			
 
 		a:hover
 			color: #f59c07
@@ -436,19 +456,24 @@
 		color: #fff
 		text-transform: uppercase
 		font-weight: bold
-		padding-top: 24px
-		padding-left: 3px
+		padding-top: 24px		
+		width: 94%		
+		background-size: 100% 91%
 
 		li
 			position: relative
+			margin-left: 3px			
+			width: 91%
 
 			a
 				color: #fff
-				display: block					
-				+s(user-button)
+				display: block				
 				line-height: 40px
 				padding-left: 58px
 				margin-left: 18px				
+				border-radius: 3px				
+				background: url(../img/icons/user-button.png) no-repeat
+				background-size: 100% 100%
 
 			a:hover
 				color: #f59c07
@@ -475,18 +500,18 @@
 
 		.icon-cash
 			margin-top: 20px
-			margin-bottom: 13px			
+			margin-bottom: 16px			
 
 		.icon-cash:before
 			content: ''
 			+s(cash)
 			position: absolute
-			left: 36px
+			left: 16%
 			top: 10px			
 
 		.icon-account:before
 			content: ''
 			+s(account)
 			position: absolute
-			left: 32px
+			left: 14%
 			top: 10px
