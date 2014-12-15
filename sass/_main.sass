@@ -1,14 +1,17 @@
 // Normally mainpage styles
-.out
-	width: 1240px
-	margin: 0 auto
+.out	
 	color: #fff
+	position: relative	
+	width: 65%
+	min-width: 820px	
+	margin: 0 auto
 
-.header
-	+png(header-bg)
+.header	
+	background: url(../img/header-bg.png) 50% 50%
+	height: 223px
+	z-index: 700	
 	position: fixed
-	top: 0px	
-	z-index: 700
+	width: 65%
 
 	.logo
 		margin-left: 55px
@@ -20,9 +23,10 @@
 		font-family: tahoma, arial, sans-serif
 		font-size: 18.5px
 		font-weight: bold		
-		+png(nav-bg)
+		background: url(../img/nav-bg.png) 50% top no-repeat
+		width: 55%
 		margin-top: 83px
-		margin-left: 40px
+		margin-left: 5%
 		
 		li:after
 			content: ''
@@ -44,32 +48,35 @@
 				color: #ffb10b
 
 		.nav-slots
-			width: 250px
+			padding-left: 15%
+			padding-right: 15%
+			background: url(../img/icons/nav-border.png) right 2px no-repeat
 
 		.nav-slots:after
-			left: 83px
+			left: 32%
 		
 		.nav-faq
-			width: 199px		
+			padding-left: 12%
+			padding-right: 12%
+			background: url(../img/icons/nav-border.png) right 2px no-repeat
 
 		.nav-faq:after
-			left: 58px
+			left: 28%
 
 		.nav-contacts
-			width: 270px
+			padding-left: 14%
 
 		.nav-contacts:after
-			left: 94px
+			right: 0
 
 .content
-	background: #131313
-	margin-top: 200px
+	background: #131313	
 	position: relative
-	padding: 48px 100px
+	padding: 248px 5% 48px	
 
 .caption		
 	background: rgba(0, 0, 0, 0.75)
-	height: 94px
+	height: 90px
 	width: 100%
 	position: absolute
 	top: 0px
@@ -87,13 +94,20 @@
 
 .slider
 	position: relative
-	margin-bottom: 48px		
+	margin-bottom: 48px
+	width: 100%
+
+	.cycle-slideshow
+		
+		img
+			width: 100%
 
 	.slider__character
 		position: absolute
 		right: -37px
-		top: 84px
+		bottom: 0px
 		z-index: 200
+		display: block		
 
 	.slider__play
 		+museosans
@@ -106,7 +120,7 @@
 		box-shadow: 1px 1px 2px #877c5a
 		position: absolute
 		right: 230px
-		top: 280px
+		bottom: 8%
 		z-index: 200		
 
 	.slider__play:hover
@@ -115,7 +129,7 @@
 	#next, #prev
 		display: block
 		position: absolute
-		top: 310px
+		bottom: 5%
 		z-index: 300
 
 	#prev
@@ -130,6 +144,10 @@
 	margin-top: 48px
 	margin-bottom: 48px
 	position: relative
+	width: 100%
+
+	img
+		width: 100%
 
 .slots
 	margin-top: 40px
@@ -152,12 +170,13 @@
 		color: #fff
 		float: right		
 		margin-top: 15px
-		margin-right: 255px
+		margin-right: 26%
 
 	a:hover
 		background: #e09b03
 
 .bigslider
+	text-align: center
 	margin-top: 10px
 	margin-bottom: 48px
 	position: relative
@@ -171,6 +190,8 @@
 			margin-top: 35px
 			text-align: center
 			position: relative
+			margin-left: 6px
+			margin-right: 6px
 
 			a				
 				+s(play)
@@ -178,9 +199,6 @@
 				position: absolute
 				bottom: 0px
 				left: 65px
-
-		.is-margin-r
-			margin-right: 14px
 
 	#big-next, #big-prev
 		display: block
@@ -200,6 +218,7 @@
 	margin-top: 45px	
 	margin-bottom: 45px		
 	overflow: hidden
+	width: 100%
 
 	.fc__header
 		+geosansL
@@ -207,15 +226,15 @@
 		margin-bottom: 45px	
 
 		.fc__faq
-			margin-left: 210px
-			margin-right: 335px	
+			margin-left: 18%
+			margin-right: 30%	
 
 	.fc__container
 		margin-top: 30px
 		display: table-row
 
 		.faq
-			width: 470px			
+			width: 49%			
 			padding: 35px 45px 15px 0px
 			border-right: 1px solid #000			
 			display: table-cell
@@ -246,7 +265,8 @@
 			padding-left: 48px			
 			border-left: 1px solid #2b2b2b			
 			display: table-cell
-			width: 477px
+			width: 51%
+			min-width: 450px
 			padding-top: 20px
 			
 			.contacts__field
@@ -268,7 +288,7 @@
 				input
 					+helvneue
 					font-size: 16.7px
-					width: 332px
+					width: 74%					
 					height: 35px					
 					margin-left: 40px		
 					padding-left: 10px
@@ -280,6 +300,8 @@
 					width: 100%
 					height: 208px
 					margin-top: 15px
+					border: none
+					resize: none
 
 .navigation
 	overflow: hidden
@@ -290,7 +312,8 @@
 
 	.navigation__block	
 		float: left
-		width: 312px
+		width: 29%
+		min-width: 230px
 
 		.navigation__header
 			+geosansL
@@ -324,6 +347,7 @@
 
 		.navigation__container
 			margin-top: 1px
+			margin-bottom: 35px
 			border-top: 1px solid #2b2b2b
 			padding-top: 22px
 			color: #acaba2
@@ -353,7 +377,7 @@
 				font-size: 17.7px
 
 			.email
-				font-size: 13.7px
+				font-size: 13.7px				
 
 .seotext
 	+helvneue
@@ -373,9 +397,96 @@
 	.icon-up
 		display: block
 		+s(up)
-		margin-left: 595px
+		margin-left: 48%
 
 .light
 	+png(light-bg)	
 	position: absolute
-	top: 208px	
+	top: 0px
+
+.userbox
+	position: fixed
+	top: 248px
+	left: 85%
+	
+	.userbox__login		
+		+png(login-bg)		
+		padding-top: 25px
+		text-align: center
+		display: block
+
+		li
+			margin-bottom: 31px			
+
+		a
+			+geosansL
+			font-size: 17.9px
+			color: #fff
+			text-transform: uppercase
+			font-weight: bold
+
+		a:hover
+			color: #f59c07
+
+	.userbox__user
+		display: block
+		+png(user-bg)		
+		+geosansL
+		font-size: 17.9px
+		color: #fff
+		text-transform: uppercase
+		font-weight: bold
+		padding-top: 24px
+		padding-left: 3px
+
+		li
+			position: relative
+
+			a
+				color: #fff
+				display: block					
+				+s(user-button)
+				line-height: 40px
+				padding-left: 58px
+				margin-left: 18px				
+
+			a:hover
+				color: #f59c07
+
+		.userbox-text
+			padding-left: 75px			
+
+		.icon-user
+			margin-bottom: 26px
+
+		.icon-user:before
+			content: ''
+			+s(user)
+			position: absolute
+			left: 35px
+			top: 0px
+
+		.icon-bonus:before
+			content: ''
+			+s(bonus)
+			position: absolute
+			left: 35px
+			top: 0px
+
+		.icon-cash
+			margin-top: 20px
+			margin-bottom: 13px			
+
+		.icon-cash:before
+			content: ''
+			+s(cash)
+			position: absolute
+			left: 36px
+			top: 10px			
+
+		.icon-account:before
+			content: ''
+			+s(account)
+			position: absolute
+			left: 32px
+			top: 10px
