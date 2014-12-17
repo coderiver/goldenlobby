@@ -3,7 +3,18 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-
+		$('.popup__nav a').click(function(event) {
+			$('.popup__nav a').removeClass('is-active');
+			$(this).addClass('is-active');
+			toggle = $(this).parents('ul').data('blocks');
+			// alert(toggle);
+			$('.'+toggle).hide();
+			str = $(this).attr('href');
+			str = str.substr(1);
+			// alert(str);
+			$(this).parents('.container').find('.'+str).show();
+			return false;
+		});
 
 		$('#scrollbar').tinyscrollbar();
 		$('#scrollbar-2').tinyscrollbar();
