@@ -312,10 +312,10 @@
 			<div class="popup__divider"></div>
 
 			<ul class="popup__nav" data-blocks="bb">
-				<li><a href="#bb1">Username</a></li>
+				<li><a href="#bb1" class="is-active">Username</a></li>
 				<li><a href="#bb2">Info</a></li>
-				<li><a href="#bb3" class="is-active">Verification</a></li>
-				<li><a href="#bb4">Account History</a></li>				
+				<li><a href="#bb3">Verification</a></li>
+				<li><a href="#bb4" style="padding-top: 9px; padding-bottom: 8px;">Account History</a></li>				
 			</ul>
 
 			
@@ -323,47 +323,121 @@
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 				<div class="viewport">
 					<div class="overview" >
+						<div class="popup__block" style="text-align: left">
+							<div class="popup__fieldlabels">
+								<div class="popup__fieldlabel">
+									<span class="popup__fieldname">Username</span>
+									<input type="text" name="" id=""><label class="icon-info"></label>
+								</div>
+								<div class="popup__fieldlabel">
+									<span class="popup__fieldname">Email</span>
+									<input type="text" name="" id=""><label class="icon-info"></label>
+								</div>
+								<div class="popup__fieldlabel">
+									<span class="popup__fieldname">Status</span>								
+								</div>
+								<div class="popup__fieldlabel middle">
+									<span class="popup__fieldname">Change Password</span>
+									<input type="text" name="" id=""><label class="icon-info"></label>
+								</div>
+								<div class="popup__fieldlabel middle">
+									<span class="popup__fieldname">Confirm Password</span>
+									<input type="text" name="" id=""><label></label>
+								</div>
+							</div>
 
-						<div class="account__status">
-							<span>Status</span>
-							<p>
+							<a href="#" class="popup__button" style="margin-right: 20px">Submit</a>
+							<a href="#" class="popup__button">Close</a>
+						</div>
+						
+						<br /><br /><br /><br /><br /><br /><br />
+						<br /><br /><br /><br /><br /><br /><br />
+						<br /><br /><br /><br /><br /><br /><br />
+						<br /><br /><br /><br /><br /><br /><br />
+						<br /><br /><br /><br /><br /><br /><br />						
+					</div>
+				</div>
+			</div>
+			<!-- end bb1 -->
+
+			<div id="scrollbar" class="scrollbar bb bb2" hidden>
+				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+				<div class="viewport">
+					<div class="overview" >
+						<div class="popup__block" style="text-align: left">
+							<div class="popup__fieldlabels">
+								<div class="popup__fieldlabel">
+									<span class="popup__fieldname">Postcode</span>
+									<input type="text" name="" id=""><label class="icon-info"></label>
+								</div>							
+								<div class="popup__fieldlabel">
+									<span class="popup__fieldname">Newsletter</span>	
+									<div class="switch" data-name="human" data-checked="true" data-value="true" style="margin-top: -23px; margin-left: 144px; margin-bottom: 70px">
+										<div class="helper"></div>
+									</div>									
+								</div>
+							</div>
+
+							<a href="#" class="popup__button" style="margin-right: 20px">Submit</a>
+							<a href="#" class="popup__button">Close</a>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<!-- end bb2 -->
+
+			<div id="scrollbar" class="scrollbar bb bb3" hidden>
+				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+				<div class="viewport">
+					<div class="overview" >
+						<div class="popup__block">
+							<span class="popup__title">Status</span>
+							<p class="popup__status">
 								Unverified / In Process / Verified
 							</p>
 
-							<ul class="account__option">
+							<ul class="popup__option">
 								<li>Option 1</li>
 								<li>Option 2</li>
 								<li>Option 3</li>
 							</ul>
 
-							<a href="#">Submit</a>
-							<a href="#" onclick="getElementById('account').style.display='none'">Close</a>
+							<a href="#" class="popup__button" style="margin-right: 20px">Submit</a>
+							<a href="#" class="popup__button" onclick="getElementById('account').style.display='none'">Close</a>							
+						</div>						
+					</div>
+				</div>
+			</div>
 
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
+			<div id="scrollbar" class="scrollbar bb bb4" hidden>
+				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+				<div class="viewport">
+					<div class="overview" >
+						<div class="popup__block">
+							<div class="popup__calendar">
+								<a href="#" class="popup__date" id="startdate">start date<span class="icon-arrow-down"></span></a>
+								<a href="#" class="popup__date" id="enddate">end date<span class="icon-arrow-down"></span></a>
+							</div>
+
+							<div class="tendays">ACCOUNT HISTORY FOR THE LAST 10 DAYS</div>
+							
+							<table>
+								<tr>
+									<th width="118px">TIME</th>
+									<th width="170px">TRANSACTION</th>
+									<th width="160px">DESCRIPTION</th>
+									<th>AMOUNT</th>
+								</tr>
+
+								<tr><td>Day</td><td></td><td>CASINO</td><td></td></tr>
+								<tr><td>Month</td><td></td><td>Deposit</td><td></td></tr>
+								<tr><td style="padding-bottom: 20px">Year</td><td></td><td>Withdraw</td><td></td></tr>
+								
+								<tr><td>Hour</td><td></td><td>Game</td><td></td></tr>
+								<tr><td>Minute</td><td></td><td>Pay in</td><td></td></tr>
+								<tr><td>Timezone</td><td></td><td>Pay out</td><td></td></tr>
+							</table>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end bb1 -->
-			<div  class="scrollbar bb bb2" hidden>
-				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
-				<div class="viewport">
-					<div class="overview" >
-
-						bb2
-					</div>
-				</div>
-			</div>
-			<div  class="scrollbar bb bb3" hidden>
-				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
-				<div class="viewport">
-					<div class="overview" >
-
-						bb3
 					</div>
 				</div>
 			</div>
@@ -372,7 +446,7 @@
 	<!-- END account -->
 
 	<!-- BEGIN cashier -->
-	<div id="cashier">	
+	<div id="cashier">
 		<div class="container">
 			<div class="popup__header">
 				Cashier
@@ -380,38 +454,150 @@
 
 			<div class="popup__divider"></div>
 
-			<ul class="popup__nav">
-				<li><a href="#" class="is-active">Deposit</a></li>
-				<li><a href="#">Withdraw</a></li>
-				<li><a href="#">Security</a></li>				
-			</ul>
+			<ul class="popup__nav" data-blocks="bb-cash">
+				<li><a href="#bb1" class="is-active">Deposit</a></li>
+				<li><a href="#bb2">Withdraw</a></li>
+				<li><a href="#bb3">Security</a></li>				
+			</ul>		
 			
-			<div id="scrollbar-2" class="scrollbar">
+			<div id="scrollbar-2" class="scrollbar bb-cash bb1">
+				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+
+				<div class="viewport">
+					<div class="overview" >
+						<div class="popup__block deposits">
+							<span class="popup__title">BITCOIN DEPOSIT</span>
+							<p class="popup__subtitle">
+								Send your Bitcoins to this Address
+							</p>
+
+							<div class="popup__fieldlabel">							
+								<input type="text" name="" id=""><label class="icon-info"></label>
+							</div>	
+
+							<div class="qr"></div>
+								
+							<a href="#" class="popup__button">Get New Address</a>
+						</div>							
+
+						<div class="popup__block yourdeposits">
+							<span class="popup__title">Your deposits</span>
+							<p class="popup__subtitle">
+								Send your Bitcoins to this Address
+							</p>
+
+							<div class="popup__divider" style="width: 40%; margin-top: 30px; margin-bottom: 25px"></div>
+
+							<table>
+								<tr>
+									<th width="135px">Date.time</th>
+									<th style="width: 305px; text-align: center; padding-right: 45px;">TRANSACTION ID</th>
+									<th width="105px">AMOUNT BTC</th>
+								</tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+							</table>							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="scrollbar-2" class="scrollbar bb-cash bb2" hidden>
+				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+
+				<div class="viewport">
+					<div class="overview" >
+						<div class="popup__block withdraw">
+							<span class="popup__title">BITCOIN WITHDRAW</span>
+							<p class="popup__subtitle">
+								Transfer Bitcoins to your wallet address 
+							</p>
+
+							<div class="popup__divider" style="width: 60%; margin-top: 20px; margin-bottom: 30px"></div>
+
+							<div class="popup__fieldlabels">
+								<div class="popup__fieldlabel">	
+									<p class="popup__fieldnameover">
+										Your bitcoin address
+									</p>						
+									<input type="text" name="" id=""><label class="icon-info"></label>
+								</div>
+
+								<div class="popup__fieldlabel">	
+									<p class="popup__fieldnameover">
+										Amount MBTC
+									</p>						
+									<input type="text" name="" id=""><label class="icon-info"></label>
+								</div>
+							</div>
+							
+							<a href="#" class="popup__button">Withdraw</a>
+						</div>
+
+						<div class="popup__block yourwithdraw">
+							<span class="popup__title">Your withdraws</span>
+							
+							<div class="popup__divider" style="width: 40%; margin-top: 30px; margin-bottom: 25px"></div>
+
+							<table>
+								<tr>
+									<th width="135px">Date.time</th>
+									<th style="width: 305px; text-align: center; padding-right: 45px;">TRANSACTION ID</th>
+									<th width="105px">AMOUNT BTC</th>
+								</tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+								<tr><td style="padding-bottom: 10px">27 oct 2014 00:00</td><td style="text-transform: none">lsdfkjgdfkjgdfkjgsdfdkfghskdjhgkslht985ewthg</td><td>100 mbtc</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="scrollbar-2" class="scrollbar bb-cash bb3" hidden>
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 
 				<div class="viewport">
 					<div class="overview" >
 
-						<div class="cashier__deposit">
-							<span>BITCOIN DEPOSIT</span>
-							<p>
-								Send your Bitcoins to this Address
+						<div class="popup__block securitygoogle">
+							<span class="popup__title">GOOGLE AUTH CODE</span>
+							<p class="popup__subtitle">
+								Toggle Google Authenticator on your account
+							</p>							
+							
+							<a href="#" class="popup__button" style="margin-top: 30px; margin-bottom: 40px">Enable</a>
+
+							<div class="popup__divider" style="width: 40%; margin-top: -10px; margin-bottom: 25px"></div>
+
+							<p class="popup__title">
+								INSTALL GOOGLE AUTHENTICATOR
+							</p>		
+
+							<p class="install">
+								Google Authenticator is used to further enhance the security of your Account.
 							</p>
 
-							<div>
-								<input type="text" name="" id=""><label></label>
-							</div>
+							<p class="install">
+								If you wish to enable it, please click on “Enable” and follow the instructions depending on your device.  
+							</p>					
+						</div>
 
-							<div class="qr">								
-							</div>
+						<div class="popup__block securityother">							
+							<p class="install">
+								If enabled, then each time you login or make withdrawal at GOLDENLOBBY.COM, you will be promted to complete the 2-step verification which can only be finished by having access to your smartphone   
+							</p>
+
+							<p class="install">
+								Please read the relevant instructions below on how to setup Google Authenticator on your Account.
+							</p>
 							
-							<a href="#" onclick="getElementById('cashier').style.display='none'">Get New Address</a>
-
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
-							<br /><br /><br /><br /><br /><br /><br />
+							<a href="#" class="popup__button" style="margin-top: 15px">Android instruction</a><br/>
+							<a href="#" class="popup__button" style="margin-top: 15px">Iphone instruction</a><br/>
+							<a href="#" class="popup__button" style="margin-top: 15px">Blackberry</a>							
 						</div>
 					</div>
 				</div>
@@ -444,11 +630,11 @@
 				</div>
 			</div>
 
-			<p class="register__agree">
+			<p class="popup__agree">
 				I agree terms and conditions and I´m 18 + 
 			</p>
 
-			<div class="switch" data-name="human" data-checked="true" data-value="true">
+			<div class="switch" data-name="human" data-checked="true" data-value="true" style="margin-left: 290px">
 				<div class="helper"></div>
 			</div>
 
@@ -528,7 +714,7 @@
 				<div class="popup__fieldnoi email" style="text-align: left">					
 					<input type="text" name="" id="inputemail" placeholder="email" style="padding-right: 70px; width: 260px;">
 			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
-				</div>				
+				</div>
 			</div>
 			
 			<a href="#" class="popup__close">Submit</a>
@@ -713,7 +899,7 @@
 
 			<div class="popup__divider"></div>
 
-			<ul class="popup__nav" data-blocks="bb3">
+			<ul class="popup__nav" data-blocks="bb-faq">
 				<li><a href="#block1">Webshop</a></li>				
 				<li><a href="#block2" class="is-active">Bitcoin</a></li>
 				<li><a href="#block3">Games</a></li>				

@@ -50,8 +50,8 @@
 
 				a
 					color: #ffc600
-					width: 116px
-					padding: 20px 10px
+					width: 116px					
+					padding: 22px 10px
 					display: block
 					line-height: 20px
 
@@ -59,80 +59,191 @@
 					background: #141414
 					border-bottom: 1px solid #42413f
 					border-right: 1px solid #42413f
-					border-radius: 4px
-					width: 118px
+					border-radius: 4px					
+					padding-bottom: 21px
+					padding-right: 9px
 
 				a:hover
 					color: #cca600
 
-		.account__status, .cashier__deposit			
+		.popup__block
+			width: 530px
+			text-align: center
 			color: #fff
-			+museosans				
+			+museosans			
 
-			span
+			.popup__fieldlabels
+				margin-top: 10px
+				margin-bottom: 24px
+
+			.popup__title
 				text-transform: uppercase				
 				font-size: 21px
 
-			p
+			.popup__subtitle
+				font-size: 19.8px
+				margin-bottom: 15px
+
+			.popup__option
+				font-size: 17px
+				margin-top: 20px			
+				margin-bottom: 30px
+
+			.popup__status
 				font-size: 17px
 
-			.account__option
-				font-size: 17px
-				margin-top: 20px				
+			.install
+				margin-top: 6px
+				margin-bottom: 14px
+				line-height: 20px
+				font-size: 16.7px
+				padding: 0 40px			
 
-			a
-				margin-top: 30px
-				display: inline-block
-				margin-left: 10px
-				margin-right: 10px
-				width: 240px
-				height: 34px
-				line-height: 34px
-				background: #ffb10a
-				border-radius: 5px
+			.popup__calendar
+				margin-bottom: 55px								
+
+			.popup__date
+				border-left: 1px solid #0b0b0b
+				border-top: 1px solid #0b0b0b
+				border-right: 1px solid #423d35
+				border-bottom: 1px solid #423d35
+				border-radius: 6px
 				color: #fff
-				font-size: 17px
-				text-shadow: 0 -1px 0 #A6741B
+				+museosans
+				font-size: 16.7px
+				display: inline-block
+				text-align: left
+				background: #141414
+				padding: 5px 0px 6px 15px	
+				width: 215px
+				margin-right: 23px
 
-			a:hover
-				background: #d99603
+				.icon-arrow-down
+					position: relative
+				
+				.icon-arrow-down:before
+					content: ''
+					position: absolute
+					+s(arrow-down)
+					top: 6px
+					left: 14px
 
-		.cashier__deposit
-			margin-left: 100px			
+			.tendays
+				text-transform: uppercase
+				font-size: 21px
+				text-align: center
 
-			input
+			table
+				width: 100%
+				font-size: 13px
+				font-weight: 500
+				text-transform: uppercase
+				text-align: left
+				margin-left: 5px
+				margin-top: 30px
+
+				th
+					padding-bottom: 28px
+
+			.qr
+				width: 105px
+				height: 105px
+				background: #fff
+				margin-left: 210px
+				margin-top: 22px
+				margin-bottom: 30px
+
+		.popup__agree
+			color: #fff
+			+museosans
+			font-size: 18px
+			margin-bottom: 20px
+
+		.yourdeposits
+			display: block
+
+		.deposits
+			display: block
+
+		.withdraw
+			display: block
+
+		.yourwithdraw
+			display: block
+
+		.securitygoogle
+			display: block
+
+		.securityother
+			display: block
+
+		.popup__fieldlabel
+			color: #fff			
+			margin-bottom: 18px				
+
+			.popup__fieldname					
+				font-size: 20.7px
+				display: inline-block
+				width: 140px
+
+			.popup__fieldnameover
+				font-size: 20.7px
+				text-align: left
+				margin-left: 90px
+				margin-top: 4px
+				
+			input					
 				background: #141414
 				border-left: 1px solid #0c0c0c
 				border-top: 1px solid #0c0c0c
 				border-right: 1px solid #343434
 				border-bottom: 1px solid #343434
 				border-radius: 5px
-				width: 310px
+				width: 330px
 				height: 30px
-				line-height: 30px
-				margin-top: 12px
-				color: #fff
-				font-size: 14px
-				+museosans
+				line-height: 30px					
+				font-size: 14px					
 				padding-left: 10px
 				padding-right: 10px
-			
-			label
+				color: #fff				
+				
+			.icon-info
 				position: relative
 
-			label:after
+			.icon-info:after
 				content: ''
 				+s(info)
 				position: absolute
 				top: 0px
 				right: -20px
 
-			.qr
-				width: 105px
-				height: 105px
-				background: #fff
-				margin-left: 115px
-				margin-top: 22px
+		.middle 
+			margin-bottom: 8px
+				
+			span
+				line-height: 20px
+
+			input
+				position: relative
+				top: -10px
+
+			.icon-info:after
+				top: -11px
+
+		.popup__button
+			display: inline-block
+			width: 245px
+			height: 33px
+			line-height: 33px
+			text-align: center
+			background: #ffb00a
+			+museosans
+			color: #fff
+			border-radius: 5px
+			font-size: 20px			
+
+		.popup__button:hover
+			background: #d99603		
 
 		.popup__fields			
 			width: 390px
@@ -145,9 +256,6 @@
 			+clr
 			background: #141414			
 			margin: 24px 0px 20px 116px
-
-			
-
 
 			.email, .username, .password, .confirmpassword
 				position: relative
@@ -171,8 +279,7 @@
 				+s(password)
 				position: absolute
 				left: 17px
-				top: 26px				
-
+				top: 26px
 			
 			.popup__field
 				position: relative
@@ -210,28 +317,21 @@
 					right: 60px
 					+museosans
 					font-size: 12.5px
-					color: #fff
-
-		.register__agree
-			color: #fff
-			+museosans
-			font-size: 18px
-			margin-bottom: 20px
+					color: #fff		
 
 		.popup__container
 			position: relative
 
-			.popup__type
-				color: #000
-				+museosans
-				font-size: 12px
-				background: #ffb40a
-				padding: 1px 16px 2px 10px
-				position: absolute
-				top: 17px
-				// left: 100% 
-				
-				right: -100px 
+		.popup__type
+			color: #000
+			+museosans
+			font-size: 12px
+			background: #ffb40a
+			padding: 1px 16px 2px 10px
+			position: absolute
+			top: 17px
+			// left: 100% 			
+			right: -100px 
 
 		.popup__type:before
 			content: ''

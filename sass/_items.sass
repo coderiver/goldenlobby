@@ -54,28 +54,22 @@
 	.disable
 		display: none
 
-
-.switch
-	margin-left: 290px
+.switch	
 	display: block
 	box-sizing: border-box
 	width: 46px
 	height: 18px
 	border-radius: 999px
-	background-color: #2c2c2c
+	+s(switcher-bg)
 	margin-bottom: 10px
 	-webkit-transition: background-color cubic-bezier(.25, .46, .45, .94) .2s
 	-moz-transition: background-color cubic-bezier(.25, .46, .45, .94) .2s
 	transition: background-color cubic-bezier(.25, .46, .45, .94) .2s
+	position: relative
+	top: -3px
 
-.switch .helper
-	margin-top: 1px
-	margin-left: -30px
-	border-radius: 50%
-	width: 16px
-	height: 16px
-	display: inline-block
-	background-color: #ffab09
+.switch .helper		
+	+s(toggle-bg)
 	-webkit-transition-property: -webkit-transform
 	-moz-transition-property: -moz-transform
 	transition-property: transform
