@@ -8,6 +8,25 @@
 	width: auto
 	margin-right: 20% 
 
+.button-md		
+	+museosans
+	background: #ffb20a
+	text-align: center
+	padding: 2px 0px
+	color: #fff
+	text-decoration: none
+	border-radius: 5px
+	box-shadow: 1px 1px 2px #877c5a		
+	z-index: 200		
+	display: inline-block					
+	width: 16vw
+	max-width: 165px
+	min-width: 50px
+	font-size: 1.6vw
+
+.button-md:hover
+	background: #e09b03
+
 .header	
 	background: url(../img/header-bg.png)
 	height: 223px
@@ -81,19 +100,6 @@
 	position: relative
 	padding: 248px 5% 48px	
 
-.caption		
-	background: rgba(0, 0, 0, 0.75)
-	height: 90px
-	width: 100%
-	position: absolute
-	top: 0px
-	z-index: 100
-	border: 1px solid #110b03
-
-	.container
-		border: 1px solid #645e56
-		height: 100%
-
 .divider
 	height: 1px
 	border-top: 1px solid #2b2b2b
@@ -102,36 +108,66 @@
 .slider1
 	position: relative
 	margin-bottom: 48px
-	width: 100%
+	width: 100%	
 
-	.cycle-slideshow
+	.cycle-slideshow		
 		
 		img
 			width: 100%
 
-	.slider__character
-		position: absolute
-		right: -37px
-		bottom: 0px
-		z-index: 200
-		display: block		
+		.slider__block
+			width: 100%
+			position: relative
 
-	.slider__play
-		+museosans
-		background: #ffb20a
-		padding: 4px 62px
-		font-size: 22px
-		color: #fff
-		text-decoration: none
-		border-radius: 5px
-		box-shadow: 1px 1px 2px #877c5a
-		position: absolute
-		right: 230px
-		bottom: 8%
-		z-index: 200		
+			.slider__content				
+				position: absolute
+				width: 45%
+				left: 4.5%
+				top: 62%
+				text-align: center
 
-	.slider__play:hover
-		background: #e09b03
+				.slider__text					
+					+geosansL
+					font-size: 44px
+					font-size: 2.3vw
+					text-transform: uppercase
+					text-shadow: -1px 2px 3px #91876b
+					margin-bottom: 2vh
+
+			.marketplace
+				+lbrush
+				font-size: 25px
+				color: #000
+				position: absolute
+				top: 27.5%
+				left: 57%
+
+			.slider__character
+				position: absolute
+				right: -50px
+				bottom: 5px
+				z-index: 700
+				width: 22.5vw
+
+			.slider__contentr
+				position: absolute
+				width: 35%
+				right: 1.5%
+				top: 30%
+				text-align: center
+				+geosansL
+				text-transform: uppercase
+
+				.slider__text					
+					font-size: 35px
+					font-size: 2.78vw					
+
+				.slider__subtext
+					font-size: 13px
+					font-size: 1vw
+					margin-top: -0.5vw
+					margin-bottom: 1vw
+				
 
 	#next, #prev
 		display: block
@@ -156,31 +192,28 @@
 	img
 		width: 100%
 
+	.button-md
+		position: absolute
+		top: 80%
+		left: 22.5%
+
 .slots
 	margin-top: 40px
 	margin-bottom: 40px	
-	text-align: right	
+	text-align: center
+	position: relative
 
 	span
 		+geosansL		
 		font-size: 50px
 		text-transform: uppercase
-		margin-right: 40px
-
-	a
+	
+	.slots__allslots
 		+museosans
 		font-size: 22px		
-		padding: 5px 42px
-		background: #ffb20a
-		text-decoration: none
-		border-radius: 5px
-		color: #fff
-		float: right		
-		margin-top: 15px
-		margin-right: 26%
-
-	a:hover
-		background: #e09b03
+		position: absolute		
+		top: 18px
+		left: 62%	
 
 .bigslider
 	text-align: center
@@ -193,30 +226,66 @@
 		width: 100% 
 
 		.bigslider__item
-			width: 335px
+			+png(frame)			
 			display: inline-block
 			margin-top: 35px
 			text-align: center
 			position: relative
-			margin-left: 6px
-			margin-right: 6px
+			margin-left: 4%
+			margin-right: 4%
+			position: relative
 
-			a	
-				display: block
+			img
+				position: absolute
+
+			.bigslider__marketplace				
+				top: -13px
+				left: -11px
+
+			.bigslider__pirate
+				top: 54px
+				left: -45px
+
+			.bigslider__underwater
+				top: -5px
+				left: 20px
+
+			.bigslider__monster
+				top: 16px
+				left: 24px
+
+			.bigslider__candy
+				top: 35px
+				left: 0px
+
+			.bigslider__mummy
+				top: 11px
+				left: 0px
+
+			.bigslider__link
+				text-align: center
 				position: absolute
 				bottom: 0px
-				left: 62px
-				color: #fff
-				+museosans
-				font-weight: bold
-				font-size: 20px
-				width: 210px
-				height: 34px
-				padding-top: 6px
-				background: linear-gradient(to right, #444, #111)
+				left: 50px
 
-			a:hover
-				color: #ffb10b
+				a
+					display: inline-block
+					border-radius: 2px
+					width: 85px		
+					height: 27px			
+					color: #fff
+					+museosans
+					text-transform: uppercase
+					font-weight: bold
+					font-size: 14px
+					padding-top: 10px
+					border-top: 1px solid #605d5e
+					margin-left: 3px
+					margin-right: 3px
+					background: linear-gradient(to bottom, #322d30, #2f2a2d)
+
+				a:hover
+					color: #ffb10b
 
 	#big-next, #big-prev
 		display: block
@@ -241,11 +310,7 @@
 	.fc__header
 		+geosansL
 		font-size: 50px
-		margin-bottom: 45px	
-
-		.fc__faq
-			margin-left: 15%
-			margin-right: 28%	
+		margin-bottom: 45px		
 
 	.fc__container
 		margin-top: 30px
@@ -264,19 +329,6 @@
 				line-height: 21px
 				font-variant: small-caps
 				margin-top: -16px			
-
-			a
-				+museosans
-				background: #ffb20a
-				padding: 4px 76px
-				font-size: 21.7px
-				color: #fff
-				text-decoration: none
-				border-radius: 5px	
-				text-shadow: 0px -1px 2px #b49448			
-
-			a:hover
-				background: #e09b03
 
 		.contacts
 			margin-left: 1px
@@ -504,8 +556,11 @@
 			top: 0px
 
 		.icon-cash
-			margin-top: 20px
-			margin-bottom: 16px			
+			margin-top: 17.5px
+			margin-bottom: 13px
+
+		.icon-account
+			margin-bottom: 13px
 
 		.icon-cash:before
 			content: ''
@@ -518,5 +573,12 @@
 			content: ''
 			+s(account)
 			position: absolute
-			left: 14%
+			left: 14.5%
+			top: 10px
+
+		.icon-logout:before
+			content: ''
+			+s(logout)
+			position: absolute
+			left: 14.5%
 			top: 10px

@@ -29,23 +29,35 @@
 	<div class="content">
 		<!-- BEGIN slider-->
 		<div class="slider1">
-			<div class="cycle-slideshow" data-cycle-timeout="4000" data-cycle-auto-height="calc" data-cycle-slides="img" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-fx="scrollHorz">
-				<img src="img/slide1.jpg" alt="">
-				<img src="img/slide2.jpg" alt="" style="display: none">
-			</div>
-			<!-- END slideshow-->
+			<div class="cycle-slideshow" data-cycle-timeout="4000" data-cycle-auto-height="calc" data-cycle-slides=".slider__block" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-fx="scrollHorz">
+				<div class="slider__block">				
+					<img src="img/slide1.jpg" alt="">					
+					<div class="slider__content">	
+						<p class="slider__text">Known Classic Themes</p>
+						<a href="#" class="button-md">Play</a>
+					</div>					
+				</div>
+				<div class="slider__block" hidden>
+					<img src="img/slide2.jpg" alt="">					
+					<div class="slider__content">	
+						<p class="slider__text">High-End Quality Creations</p>
+						<a href="#" class="button-md">Play</a>
+					</div>					
+					<img src="img/character.png" class="slider__character" alt="">
+					<!--<span class="marketplace">The Marketplace</span>-->
+				</div>
+				<div class="slider__block" hidden>
+					<img src="img/slide3.jpg" alt="">					
+					<div class="slider__contentr">	
+						<p class="slider__text">BITCOIN PAYMENT</p>
+						<p class="slider__subtext">Bet To The Future with Bitcoin & Golden Lobby</p>
+						<a href="#" class="button-md">faq</a>
+					</div>					
+				</div>
+			</div>			
 
 			<a href="#" id="next"></a>
 			<a href="#" id="prev"></a>
-
-			<img src="img/character.png" class="slider__character" alt="">			
-
-			<a href="#" class="slider__play">Play</a>
-
-			<div class="caption">
-				<div class="container">					
-				</div>						
-			</div>
 		</div>
 		<!-- END slider -->
 
@@ -53,17 +65,14 @@
 
 		<div class="unveiled">
 			<img src="img/unveiled.jpg" alt="">
-			<div class="caption">
-				<div class="container">					
-				</div>						
-			</div>
+			<a href="#" class="button-md">Play</a>
 		</div>
 
 		<div class="divider"></div>
 
 		<div class="slots">
 			<span>slots</span>
-			<a href="#">All Slots</a>
+			<a href="#" class="slots__allslots button-md">All Slots</a>
 		</div>
 
 		<div class="divider"></div>
@@ -74,64 +83,97 @@
 				<!-- BEGIN bigslider__block -->
 				<div class="bigslider__block">
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-marketplace.png" class="bigslider__marketplace" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>
 					</div>
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-pirate.png" class="bigslider__pirate" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-underwater.png" class="bigslider__underwater" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-monster.png" class="bigslider__monster" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
 
+					<div class="bigslider__item">
+						<img src="img/bslide-candy.png" class="bigslider__candy" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
+					</div>
+
+					<div class="bigslider__item">
+						<img src="img/bslide-mummy.png" class="bigslider__mummy" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
+					</div>
 				</div>
 				<!-- END bigslider__block -->
 
 				<!-- BEGIN bigslider__block -->
 				<div class="bigslider__block">
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-marketplace.png" class="bigslider__marketplace" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>
 					</div>
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-pirate.png" class="bigslider__pirate" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-underwater.png" class="bigslider__underwater" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-monster.png" class="bigslider__monster" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
-	
-				</div>
-				<!-- END bigslider__block -->
 
-				<!-- BEGIN bigslider__block -->
-				<div class="bigslider__block">
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-candy.png" class="bigslider__candy" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
+
 					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
-					</div>
-					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
-					</div>
-					<div class="bigslider__item">
-						<img src="img/slide-item.png" alt="">
-						<a href="#">PLAY</a>
+						<img src="img/bslide-mummy.png" class="bigslider__mummy" alt="">
+						<div class="bigslider__link">
+							<a href="#">Play</a>
+							<a href="#">Demo</a>
+						</div>						
 					</div>
 				</div>
 				<!-- END bigslider__block -->
@@ -148,8 +190,12 @@
 		<!-- BEGIN fc -->
 		<div class="fc">
 			<div class="fc__header">
-				<span class="fc__faq">FAQ</span>
-				<span class="fc__contacts">CONTACTS</span>
+				<table>
+					<tr>
+						<td width="50%" align="center">FAQ</td>
+						<td width="50%" align="center">CONTACTS</td>
+					</tr>
+				</table>
 			</div>
 
 			<div class="divider"></div><br /><br />
@@ -160,7 +206,7 @@
 						Lorem Ipsum is simply dummy text of the printing and   typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 					</p>
 
-					<a href="#">Faq</a>
+					<a href="#" class="button-md">Faq</a>
 				</div>
 
 				<div class="contacts">
@@ -270,8 +316,9 @@
 		<ul class="userbox__user">
 			<li class="icon-user userbox-text">Thomas</li>
 			<li class="icon-bonus userbox-text">10000</li>			
-			<li><a href="#" class="icon-cash" onclick="getElementById('cashier').style.display='block'">Cashier</a></li>
-			<li><a href="#" class="icon-account" onclick="getElementById('account').style.display='block'">Account</a></li>	
+			<li><a href="#" class="icon-cash">Cashier</a></li>
+			<li><a href="#" class="icon-account">Account</a></li>
+			<li><a href="#" class="icon-logout">Logout</a></li>
 		</ul>		
 	</div>
 	
