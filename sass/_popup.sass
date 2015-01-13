@@ -18,7 +18,7 @@
 		border-bottom: 1px solid #000
 		height: 1px
 		
-	#account, #cashier, #register, #confemail, #login, #forgotusername, #forgotusernameconf, #forgotpass, #confnewpass, #forgotpassconf, #loginerror, #loginconfirmation, #frasqe, #payin
+	#account, #cashier, #register, #confemail, #emailconflink, #login, #forgotusername, #forgotusernameconf, #forgotpass, #confnewpass, #forgotpassconf, #loginerror, #loginconfirmation, #frasqe, #payin
 		display: block
 		width: 620px		
 		background: url(../img/popup-bg.png)
@@ -401,3 +401,39 @@
 
 		.is-error
 			background: #b72c1a
+			
+		.reg-error
+			background: #b72c1a
+			text-align: left
+			color: #FFF 
+			width: 340px
+			padding: 10px 20px
+			p
+				font-size: 18px
+
+		.popup__check-pass
+			margin: 10px 0px 0px 110px
+			+museosans
+			color: #fff
+			background: #141414
+			width: 380px
+			height: 70px
+			padding: 5px 10px
+			text-align: left	
+
+			p
+				font-size: 14.5px
+				margin-top: 4px
+				margin-bottom: 3px
+				
+		.popup__email
+			margin: 30px 0px 30px 85px
+			+museosans
+			color: #fff
+			width: 455px
+			text-align: left
+			
+		.header-pass-forg
+			+museosans
+			font-size: 25px
+			text-transform: uppercase

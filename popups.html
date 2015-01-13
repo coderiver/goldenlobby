@@ -509,6 +509,15 @@
 
 			<div class="popup__divider"></div>
 
+			<div class="popup__check reg-error">
+				<p>
+					- The email adress you have entered does not exist
+				</p>
+				<p>
+					- Please agree to the T&C
+				</p>
+			</div>
+
 			<div class="popup__fields">
 				<div class="popup__field email">					
 					<input type="text" name="" id="inputemail" placeholder="email">
@@ -556,6 +565,30 @@
 		</div>
 	</div>
 	<!-- END confemail -->
+
+
+	<!-- BEGIN emailconflink -->
+	<div id="emailconflink">
+		<div class="container">
+			<div class="popup__header">
+				Register
+			</div>
+
+			<div class="popup__divider"></div>
+
+			<div class="popup__check">
+				<p>
+					Thank you!
+				</p>
+			</div>	
+
+			<div class="popup__email">
+				We've sent you an email with a confirmation link. Please click on this link to confirm your email adress and let the games begin.
+			</div>
+		</div>
+	</div>
+	<!-- END emailconflink -->
+
 
 	<!-- BEGIN login -->
 	<div id="login">	
@@ -636,17 +669,15 @@
 	<!-- BEGIN forgotpass -->
 	<div id="forgotpass">	
 		<div class="container">
-			<div class="popup__header">
-				Login
+			<div class="popup__header header-pass-forg">
+				Password forgotten
 			</div>
 
 			<div class="popup__divider"></div>
 
-			<div class="popup__check">
-				<span>Forgot password</span>
+			<div class="popup__check-pass">
 				<p>
-					Please type in your username<br />
-					Please type in your email
+					Please enter the information below.
 				</p>
 			</div>
 
@@ -669,16 +700,15 @@
 	<!-- BEGIN confnewpass -->
 	<div id="confnewpass">	
 		<div class="container">
-			<div class="popup__header">
-				Login
+			<div class="popup__header header-pass-forg">
+				Password forgotten
 			</div>
 
 			<div class="popup__divider"></div>
 
-			<div class="popup__check">
-				<span>Forgot password</span>
+			<div class="popup__check-pass">
 				<p>
-					Please type in new password					
+					Please choose a new password.		
 				</p>
 			</div>
 
@@ -699,20 +729,21 @@
 	<!-- BEGIN forgotpassconf -->
 	<div id="forgotpassconf">	
 		<div class="container">
-			<div class="popup__header">
-				Login
+			<div class="popup__header header-pass-forg">
+				Password forgotten
 			</div>
 
 			<div class="popup__divider"></div>
 
 			<div class="popup__check">
-				<span>Forgot password</span>
 				<p>
-					Your password has been changed successfully
+					Thank you!
 				</p>
-			</div>			
-			
-			<a href="#" class="popup__close">Close</a>
+			</div>	
+
+			<div class="popup__email">
+				We've sent you an email with a confirmation link. Please click on this link to change.
+			</div>
 		</div>
 	</div>
 	<!-- END forgotpassconf -->
