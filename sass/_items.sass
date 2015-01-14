@@ -1,5 +1,5 @@
 /* Tiny Scrollbar */
-#scrollbar, #scrollbar-2, #scrollbar-3
+.scrollbar-style
 	width: 100%	
 
 	.viewport
@@ -91,21 +91,24 @@
 	-o-transform: translateX(30px)
 	transform: translateX(30px)
 
-.slider
-	width: 423px	
+.slider-bg
+	width: 423px
 	height: 26px
-	background: url(../img/icons/slider-bg.png)
-	position: relative
+	background: url(../img/icons/slider-bg.png)	
 	margin: 0 auto
-	margin-bottom: 20px
+
+	.slider	
+		position: relative		
+		margin-bottom: 20px
+		width: 395px		
+		margin-left: 2px
 
 .ui-slider-handle
 	width: 25px
 	height: 24px
 	position: absolute
-	top: 0px	
-	z-index: 700
-	margin-left: -12px	
+	top: 1px	
+	z-index: 700	
 	background: url(../img/icons/slider-button.png) no-repeat
 
 #slider-result

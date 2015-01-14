@@ -32,7 +32,7 @@
 			</ul>
 
 			
-			<div id="scrollbar" class="scrollbar bb bb1">
+			<div class="scrollbar-style bb bb1">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 				<div class="viewport">
 					<div class="overview" >
@@ -62,18 +62,12 @@
 							<a href="#" class="popup__button" style="margin-right: 20px">Submit</a>
 							<a href="#" class="popup__button">Close</a>
 						</div>
-						
-						<br /><br /><br /><br /><br /><br /><br />
-						<br /><br /><br /><br /><br /><br /><br />
-						<br /><br /><br /><br /><br /><br /><br />
-						<br /><br /><br /><br /><br /><br /><br />
-						<br /><br /><br /><br /><br /><br /><br />						
 					</div>
 				</div>
 			</div>
 			<!-- end bb1 -->
 
-			<div id="scrollbar" class="scrollbar bb bb2" hidden>
+			<div class="scrollbar-style bb bb2">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 				<div class="viewport">
 					<div class="overview" >
@@ -116,7 +110,7 @@
 									<input type="text" name="" id=""><label class="icon-info"></label>
 								</div>							
 								<div class="popup__fieldlabel">
-									<span class="popup__fieldname">Newsletter</span>	
+									<span class="popup__fieldname">Newsletter</span>
 									<div class="switch" data-name="human" data-checked="true" data-value="true" style="margin-top: -23px; margin-left: 144px; margin-bottom: 70px">
 										<div class="helper"></div>
 									</div>									
@@ -132,7 +126,7 @@
 			</div>
 			<!-- end bb2 -->
 
-			<div id="scrollbar" class="scrollbar bb bb3" hidden>
+			<div class="scrollbar-style bb bb3">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 				<div class="viewport">
 					<div class="overview" >
@@ -155,7 +149,7 @@
 				</div>
 			</div>
 
-			<div id="scrollbar" class="scrollbar bb bb4" hidden>
+			<div class="scrollbar-style bb bb4">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 				<div class="viewport">
 					<div class="overview" >
@@ -206,7 +200,7 @@
 				<li><a href="#bb3">Security</a></li>				
 			</ul>		
 			
-			<div id="scrollbar-2" class="scrollbar bb-cash bb1">
+			<div class="scrollbar-style bb-cash bb1">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 
 				<div class="viewport">
@@ -227,6 +221,7 @@
 						</div>							
 
 						<div class="popup__block yourdeposits">
+							<br />
 							<span class="popup__title">Your deposits</span>
 							<p class="popup__subtitle">
 								Send your Bitcoins to this Address
@@ -250,7 +245,7 @@
 				</div>
 			</div>
 
-			<div id="scrollbar-2" class="scrollbar bb-cash bb2" hidden>
+			<div class="scrollbar-style bb-cash bb2">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 
 				<div class="viewport">
@@ -283,6 +278,7 @@
 						</div>
 
 						<div class="popup__block yourwithdraw">
+							<br />
 							<span class="popup__title">Your withdraws</span>
 							
 							<div class="popup__divider" style="width: 40%; margin-top: 30px; margin-bottom: 25px"></div>
@@ -303,7 +299,7 @@
 				</div>
 			</div>
 
-			<div id="scrollbar-2" class="scrollbar bb-cash bb3" hidden>
+			<div class="scrollbar-style bb-cash bb3">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 
 				<div class="viewport">
@@ -330,7 +326,7 @@
 								If you wish to enable it, please click on “Enable” and follow the instructions depending on your device.  
 							</p>					
 						</div>
-
+						
 						<div class="popup__block securityother">							
 							<p class="install">
 								If enabled, then each time you login or make withdrawal at GOLDENLOBBY.COM, you will be promted to complete the 2-step verification which can only be finished by having access to your smartphone   
@@ -344,6 +340,8 @@
 							<a href="#" class="popup__button" style="margin-top: 15px">Iphone instruction</a><br/>
 							<a href="#" class="popup__button" style="margin-top: 15px">Blackberry</a>	
 						</div>
+
+						<br />
 
 						<!-- BEGIN android instruction -->
 						<div class="popup__block android-instruction">							
@@ -603,12 +601,12 @@
 				<div class="popup__fields">				
 					<div class="popup__field username" style="text-align: left">						
 						<input type="text" name="" id="inputusername" placeholder="username" style="padding-right: 110px; width: 220px;">
-						<span class="popup__forgot">forgot</span>	
+						<a href="#" class="popup__forgot">forgot</a>
 						<div class="popup__type">username has to have at least 8 characters</div>								
 					</div>
 					<div class="popup__field password">						
 						<input type="text" name="" id="inputpassword" placeholder="password" style="padding-right: 110px; width: 220px;">
-						<span class="popup__forgot">forgot</span>						
+						<a href="#" class="popup__forgot">forgot</a>
 					</div>				
 				</div>				
 			</div>
@@ -636,8 +634,8 @@
 
 			<div class="popup__fields">				
 				<div class="popup__fieldnoi email" style="text-align: left">					
-					<input type="text" name="" id="inputemail" placeholder="email" style="padding-right: 70px; width: 260px;">
-			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
+					<input type="text" name="" id="inputemail" placeholder="email" style="padding-right: 70px; width: 260px;">			 		
+			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
 				</div>
 			</div>
 			
@@ -684,11 +682,12 @@
 			<div class="popup__fields">				
 				<div class="popup__fieldnoi username" style="text-align: left">					
 					<input type="text" name="" id="inputusername" placeholder="username" style="padding-right: 70px; width: 260px;">
-			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
+			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
+
 				</div>
 				<div class="popup__fieldnoi email" style="text-align: left">					
 					<input type="text" name="" id="inputemail" placeholder="email" style="padding-right: 70px; width: 260px;">
-			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
+			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
 				</div>
 			</div>
 			
@@ -768,11 +767,11 @@
 			<div class="popup__fields">				
 				<div class="popup__fieldnoi username" style="text-align: left">					
 					<input type="text" name="" id="inputusername" placeholder="username" style="padding-right: 70px; width: 260px;">
-			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
+			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
 				</div>
 				<div class="popup__fieldnoi password" style="text-align: left">					
 					<input type="text" name="" id="inputpassword" placeholder="password" style="padding-right: 70px; width: 260px;">
-			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
+			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
 				</div>
 			</div>
 			
@@ -800,11 +799,11 @@
 			<div class="popup__fields">				
 				<div class="popup__fieldnoi username" style="text-align: left">					
 					<input type="text" name="" id="inputusername" placeholder="username" style="padding-right: 70px; width: 260px;">
-			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
+			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
 				</div>
 				<div class="popup__fieldnoi password" style="text-align: left">					
 					<input type="text" name="" id="inputpassword" placeholder="password" style="padding-right: 70px; width: 260px;">
-			 		<span class="popup__forgot" style="right: 20px">forgot</span>					
+			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
 				</div>
 			</div>
 			
@@ -822,12 +821,12 @@
 			<div class="popup__divider"></div>
 
 			<ul class="popup__nav" data-blocks="bb-faq">
-				<li><a href="#block1" class="is-active">Webshop</a></li>				
-				<li><a href="#block2">Bitcoin</a></li>
-				<li><a href="#block3">Games</a></li>				
+				<li><a href="#bb1" class="is-active">Webshop</a></li>				
+				<li><a href="#bb2">Bitcoin</a></li>
+				<li><a href="#bb3">Games</a></li>				
 			</ul>
 			
-			<div id="scrollbar-3" class="scrollbar bb-faq block1">
+			<div class="scrollbar-style bb-faq bb1">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 
 				<div class="viewport">
@@ -841,7 +840,7 @@
 				</div>
 			</div>
 
-			<div id="scrollbar-3" class="scrollbar bb-faq block2" hidden>
+			<div class="scrollbar-style bb-faq bb2">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 
 				<div class="viewport">
@@ -855,7 +854,7 @@
 				</div>
 			</div>
 
-			<div id="scrollbar-3" class="scrollbar bb-faq block3" hidden>
+			<div class="scrollbar-style bb-faq bb3">
 				<div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
 
 				<div class="viewport">
@@ -879,13 +878,15 @@
 				Payin
 			</div>
 
-			<div class="popup__divider"></div>			
+			<div class="popup__divider"></div>
         	
 			<div id="slider-result">
 				1943875
 			</div>        
 
-			<div class="slider"></div>
+			<div class="slider-bg">
+				<div class="slider"></div>
+			</div>
 		</div>
 	</div>
 	<!-- END payin -->
