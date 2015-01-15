@@ -240,67 +240,108 @@ body
 		text-align: center
 		width: 100% 
 
-		.bigslider__item
-			+png(frame)			
-			display: inline-block
-			margin-top: 35px
+	.bigslider__item
+		+png(frame)			
+		display: inline-block
+		margin-top: 35px
+		text-align: center
+		position: relative
+		margin-left: 3%
+		margin-right: 3%
+		position: relative
+		vertical-align: top
+
+		img
+			position: absolute
+
+		.bigslider__marketplace				
+			top: -13px
+			left: -11px
+
+		.bigslider__pirate
+			top: 0px
+			left: -5px
+
+		.bigslider__underwater
+			top: -5px
+			left: 20px
+
+		.bigslider__monster
+			top: 16px
+			left: 24px
+
+		.bigslider__candy
+			top: 35px
+			left: 0px
+
+		.bigslider__mummy
+			top: 11px
+			left: 0px
+
+		.bigslider__freakshow
+			top: 10px
+			left: 13px
+
+		.bigslider__hollywood
+			top: 10px
+			left: -5px
+
+		.bigslider__vivamexico
+			top: -10px
+			left: 10px
+
+		.bigslider__dolphin
+			top: -18px
+			left: 34px
+
+		.bigslider__disko
+			top: 5px
+			left: 44px
+
+		.bigslider__frutty
+			top: 30px
+			left: 0px
+
+		.bigslider__lepetit
+			top: -8px
+			left: 0px
+
+		.bigslider__apache
+			top: -6px
+			left: 40px
+
+		.bigslider__garden
+			top: -10px
+			left: 20px
+
+		.bigslider__story
+			top: 0px
+			left: -8px
+
+		.bigslider__link
 			text-align: center
-			position: relative
-			margin-left: 4%
-			margin-right: 4%
-			position: relative
+			position: absolute
+			bottom: 0px
+			left: 50px
 
-			img
-				position: absolute
+			a
+				display: inline-block
+				border-radius: 2px
+				width: 85px		
+				height: 27px			
+				color: #fff
+				+museosans
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 14px
+				padding-top: 10px
+				border-top: 1px solid #605d5e
+				margin-left: 3px
+				margin-right: 3px
+				background: linear-gradient(to bottom, #322d30, #2f2a2d)
 
-			.bigslider__marketplace				
-				top: -13px
-				left: -11px
-
-			.bigslider__pirate
-				top: 54px
-				left: -45px
-
-			.bigslider__underwater
-				top: -5px
-				left: 20px
-
-			.bigslider__monster
-				top: 16px
-				left: 24px
-
-			.bigslider__candy
-				top: 35px
-				left: 0px
-
-			.bigslider__mummy
-				top: 11px
-				left: 0px
-
-			.bigslider__link
-				text-align: center
-				position: absolute
-				bottom: 0px
-				left: 50px
-
-				a
-					display: inline-block
-					border-radius: 2px
-					width: 85px		
-					height: 27px			
-					color: #fff
-					+museosans
-					text-transform: uppercase
-					font-weight: bold
-					font-size: 14px
-					padding-top: 10px
-					border-top: 1px solid #605d5e
-					margin-left: 3px
-					margin-right: 3px
-					background: linear-gradient(to bottom, #322d30, #2f2a2d)
-
-				a:hover
-					color: #ffb10b
+			a:hover
+				color: #ffb10b
 
 	#big-next, #big-prev
 		display: block
@@ -600,3 +641,18 @@ body
 			position: absolute
 			left: 14.5%
 			top: 10px
+
+.gamepreview
+	+png(gamepreview)
+	padding-left: 66px
+	padding-top: 43px
+	display: none
+	position: absolute	
+
+	.gamepreview__text
+		width: 300px
+		padding: 10px 20px
+		font-size: 19px
+		background: url(../img/icons/opacity-bg.png)
+		border-radius: 4px
+		text-align: justify

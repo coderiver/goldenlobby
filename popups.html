@@ -106,19 +106,18 @@
 						<div class="popup__block" style="text-align: left">
 							<div class="popup__fieldlabels">
 								<div class="popup__fieldlabel">
-									<span class="popup__fieldname">Postcode</span>
+									<span class="popup__fieldname">Mobile N.</span>
 									<input type="text" name="" id=""><label class="icon-info"></label>
 								</div>							
 								<div class="popup__fieldlabel">
 									<span class="popup__fieldname">Newsletter</span>
 									<div class="switch" data-name="human" data-checked="true" data-value="true" style="margin-top: -23px; margin-left: 144px; margin-bottom: 70px">
 										<div class="helper"></div>
-									</div>									
+									</div>
 								</div>
 							</div>
 
-							<a href="#" class="popup__button" style="margin-right: 20px">Submit</a>
-							<a href="#" class="popup__button">Close</a>
+							<a href="#" class="popup__button" style="margin-left: 135px; width: 240px">Submit</a>							
 						</div>
 						<!-- END info 1 -->
 					</div>
@@ -133,17 +132,9 @@
 						<div class="popup__block">
 							<span class="popup__title">Status</span>
 							<p class="popup__status">
-								Unverified / In Process / Verified
-							</p>
-
-							<ul class="popup__option">
-								<li>Option 1</li>
-								<li>Option 2</li>
-								<li>Option 3</li>
-							</ul>
-
-							<a href="#" class="popup__button" style="margin-right: 20px">Submit</a>
-							<a href="#" class="popup__button" onclick="getElementById('account').style.display='none'">Close</a>							
+								Implementation of verification provider "Jumio" in progress. <br />
+								Verification functionality will be available soon
+							</p>						
 						</div>						
 					</div>
 				</div>
@@ -305,192 +296,32 @@
 				<div class="viewport">
 					<div class="overview" >
 						<div class="popup__block securitygoogle">
-							<span class="popup__title">GOOGLE AUTH CODE</span>
-							<p class="popup__subtitle">
-								Toggle Google Authenticator on your account
-							</p>							
-							
-							<a href="#" class="popup__button" style="margin-top: 30px; margin-bottom: 40px">Enable</a>
+							<span class="popup__title">ENABLE TWO-FACTOR AUTHENTICATION</span>
 
-							<div class="popup__divider" style="width: 40%; margin-top: -10px; margin-bottom: 25px"></div>
-
-							<p class="popup__title">
-								INSTALL GOOGLE AUTHENTICATOR
-							</p>		
-
-							<p class="install">
-								Google Authenticator is used to further enhance the security of your Account.
-							</p>
-
-							<p class="install">
-								If you wish to enable it, please click on “Enable” and follow the instructions depending on your device.  
-							</p>					
-						</div>
-						
-						<div class="popup__block securityother">							
-							<p class="install">
-								If enabled, then each time you login or make withdrawal at GOLDENLOBBY.COM, you will be promted to complete the 2-step verification which can only be finished by having access to your smartphone   
-							</p>
-
-							<p class="install">
-								Please read the relevant instructions below on how to setup Google Authenticator on your Account.
-							</p>
-							
-							<a href="#" class="popup__button" style="margin-top: 15px">Android instruction</a><br/>
-							<a href="#" class="popup__button" style="margin-top: 15px">Iphone instruction</a><br/>
-							<a href="#" class="popup__button" style="margin-top: 15px">Blackberry</a>	
-						</div>
-
-						<br />
-
-						<!-- BEGIN android instruction -->
-						<div class="popup__block android-instruction">							
-							<p class="install">
-								If enabled, then each time you login or make withdrawal at GOLDENLOBBY.COM, you will be promted to complete the 2-step verification which can only be finished by having access to your smartphone   
-							</p>
-
-							<p class="install">
-								Please read the relevant instructions below on how to setup Google Authenticator on your Account.
-							</p>
-							
-							<a href="#" class="popup__button" style="margin: 15px 0">Android instruction</a><br/>
-
-							<p class="install">
-								<span class="install__caption">Requirements</span>
-								To use Google Authenticator on your Android device, it must be running Android version 2.1 or later.
-							</p>
-
-							<p class="install">
-								<span class="install__caption">Downloading the app</span>
-								<span class="install__color">1.</span> Visit Google Play.<br />
-								<span class="install__color">2.</span> Search for Google Authenticator.<br />
-								<span class="install__color">3.</span> Download and install the application.
-							</p>
-
-							<p class="install">
-								<span class="install__caption">Setting up the app</span>
-								<span class="install__color">1.</span> On your phone, open the Google Authenticator application.<br />
-								<span class="install__color">2.</span> If this is the first time you have used Authenticator, click the Add an account button. If you are adding a new account, choose 'Add an account' from the appís menu.<br />
-								<span class="install__color">3.</span> To link your phone to your account:<br />
-								<span class="install__color">Using QR code</span> Select Scan account barcode (label 1a). If the 
-								Authenticator app cannot locate a barcode scanner app on your phone, you might be prompted to download and install one. If you want to install a barcode scanner app so you can complete the setup process, press Install (label 2a) then go through the installation process. Once the app is installed, reopen Google Authenticator, point your camera at the QR code on your computer screen. <br />
-								<span class="install__color">Using secret key</span> Select Manually add account (label 1b), then enter the name you want to use for this account in the box next to Enter account name (label 2b). Next, enter the secret key on your computer screen into the box under Enter key (label 2c). Make sure you've chosen to make the key Time based (label 2d) and press "Save."
-							</p>
-							
-							<div class="install__example">
-								<img src="img/android-example1.png" alt="">
+							<div class="switch" data-name="human" data-checked="true" data-value="true" style="margin-left: 235px; margin-top: 15px">
+								<div class="helper"></div>
 							</div>
 
-							<p class="install">
-								<span class="install__color">4.</span> To test that the application is working, enter the verification code on your phone into the box on your computer and click Submit Code.
-							</p>
+							<div class="hideblock">
+								<p class="popup__subtitlesmall">
+									Open Google Authentication on your phone, scan the QR code below and enter the 6-digit authentication code  
+								</p>
 
-							<div class="install__example">
-								<img src="img/android-example2.png" alt="">
+								<div class="qr"></div>
+
+								<div class="popup__fieldlabel">							
+									<input type="text" name="" id="">
+								</div>
+
+								<span class="popup__title">SECRET CODE : <span class="popup__secretcode">5khjglkhg3lkhg</span></span>
+
+								<p class="popup__subtitlesmall" style="font-size: 12.5px; margin-bottom: 30px">
+									Please write down this code. You will need it to log in if you lose your mobile device
+								</p>
+									
+								<a href="#" class="popup__button">Enable</a>
 							</div>
-
-							<p class="install">
-								<span class="install__color">5.</span> If the code is correct then Google Authenticator will be enabled for all Logins and Withdrawals on Goldenlobby.com!
-							</p>
-						</div>
-						<!-- END android instruction -->
-
-						<!-- BEGIN iphone instruction -->
-						<div class="popup__block iphone-instruction">							
-							<p class="install">
-								If enabled, then each time you login or make withdrawal at GOLDENLOBBY.COM, you will be promted to complete the 2-step verification which can only be finished by having access to your smartphone   
-							</p>
-
-							<p class="install">
-								Please read the relevant instructions below on how to setup Google Authenticator on your Account.
-							</p>
-							
-							<a href="#" class="popup__button" style="margin: 15px 0">Iphone instruction</a><br/>
-
-							<p class="install">
-								<span class="install__caption">Requirements</span>
-								To use Google Authenticator on your iPhone, iPod Touch, or iPad, you must have iOS 5.0 or later. In addition, in order to set up the app on your iPhone using a QR code, you must have a 3G model or later.
-							</p>
-
-							<p class="install">
-								<span class="install__caption">Downloading the app</span>
-								<span class="install__color">1.</span> Visit the App Store.<br />
-								<span class="install__color">2.</span> Search for Google Authenticator.<br />
-								<span class="install__color">3.</span> Download and install the application.
-							</p>
-
-							<p class="install">
-								<span class="install__caption">Setting up the app</span>
-								<span class="install__color">1.</span> Open the app on your phone<br />
-								<span class="install__color">2.</span> Tap the plus icon<br />
-								<span class="install__color">Using Barcode</span> Tap "Scan Barcode" and then point your camera at the QR code on your computer screen.<br />
-								<span class="install__color">Using Manual Entry</span> Tap "Manual Entry" and enter the email address of your Google Account. Then, enter the secret key on your computer screen into the box next to Key and tap "Done".
-							</p>
-							
-							<div class="install__example">
-								<img src="img/iphone-example1.png" alt="">
-							</div>
-
-							<p class="install">
-								<span class="install__color">4.</span> To test that the application is working, enter the verification code on your phone into the box on your computer and click Submit Code.<br />
-								<span class="install__color">5.</span> If the code is correct then Google Authenticator will be enabled for all Logins and Withdrawals on Goldenlobby.com!
-							</p>
-						</div>
-						<!-- END iphone instruction -->
-
-						<!-- BEGIN blackberry instruction -->
-						<div class="popup__block blackberry-instruction">							
-							<p class="install">
-								If enabled, then each time you login or make withdrawal at GOLDENLOBBY.COM, you will be promted to complete the 2-step verification which can only be finished by having access to your smartphone   
-							</p>
-
-							<p class="install">
-								Please read the relevant instructions below on how to setup Google Authenticator on your Account.
-							</p>
-							
-							<a href="#" class="popup__button" style="margin: 15px 0">blackberry instruction</a><br/>
-
-							<p class="install">
-								<span class="install__caption">Requirements</span>
-								To use Google Authenticator on your BlackBerry device, you must have OS 4.5-7.0. In addition, make sure your BlackBerry device is configured for US English - you might not be able to download Google Authenticator if your device is operating in another language.
-							</p>
-
-							<p class="install">
-								<span class="install__caption">Downloading the app</span>
-								You'll need Internet access on your BlackBerry to download Google Authenticator<br />
-								<span class="install__color">1.</span> Open the web browser on your BlackBerry.<br />
-								<span class="install__color">2.</span> Visit m.google.com/authenticator.<br />
-								<span class="install__color">3.</span> Download and install the application.
-							</p>
-
-							<p class="install">
-								<span class="install__caption">Setting up the app</span>
-								<span class="install__color">1.</span> To link your phone to your account, open the Authenticator app menu and select Manual key entry (label 1).<br />
-								<span class="install__color">2.</span> Enter the name of your Account below "Enter account name" (label 2).<br />
-								<span class="install__color">3.</span> Enter the secret key on your computer screen next to "Enter key" (label 3), select Time based from the drop-down menu (label 4) and press Save (label 5).
-							</p>
-							
-							<div class="install__example">
-								<img src="img/blackberry-example1.png" alt="">
-							</div>
-
-							<p class="install">
-								<span class="install__color">4.</span> To test that the application is working, enter the verification code on your phone into the box on your computer and click Submit Code.
-							</p>
-
-							<div class="install__example">
-								<img src="img/blackberry-example2.png" alt="">
-							</div>
-
-							<p class="install">
-								<span class="install__color">5.</span> If the code is correct then Google Authenticator will be enabled for all Logins and Withdrawals on Goldenlobby.com!
-							</p>
-
-							<div class="install__example">
-								<img src="img/blackberry-example3.png" alt="">
-							</div>
-						</div>
-						<!-- END blackberry instruction -->
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -564,7 +395,6 @@
 	</div>
 	<!-- END confemail -->
 
-
 	<!-- BEGIN emailconflink -->
 	<div id="emailconflink">
 		<div class="container">
@@ -587,6 +417,25 @@
 	</div>
 	<!-- END emailconflink -->
 
+	<!-- BEGIN confemail -->
+	<div id="forgotpassword">
+		<div class="container">
+			<div class="popup__header">
+				Login
+			</div>
+
+			<div class="popup__divider"></div>
+
+			<div class="popup__check">
+				<span>FORGOT PASSWORD</span>
+				<p>
+					Your password has been changed successfully
+				</p>
+			</div>
+			<a href="#" class="popup__close">Close</a>
+		</div>
+	</div>
+	<!-- END confemail -->
 
 	<!-- BEGIN login -->
 	<div id="login">	
@@ -654,7 +503,7 @@
 			<div class="popup__divider"></div>
 
 			<div class="popup__check">
-				<span>Register</span>
+				<span>FORGOT USERNAME</span>
 				<p>
 					Please check your email 
 				</p>
@@ -667,27 +516,28 @@
 	<!-- BEGIN forgotpass -->
 	<div id="forgotpass">	
 		<div class="container">
-			<div class="popup__header header-pass-forg">
-				Password forgotten
+			<div class="popup__header">
+				Login
 			</div>
 
 			<div class="popup__divider"></div>
 
-			<div class="popup__check-pass">
+			<div class="popup__check">
+				<span>FORGOT PASSWORD</span>
 				<p>
-					Please enter the information below.
+					Please type in your username
+				</p>
+				<p>
+					Please type in you email 
 				</p>
 			</div>
 
 			<div class="popup__fields">				
 				<div class="popup__fieldnoi username" style="text-align: left">					
 					<input type="text" name="" id="inputusername" placeholder="username" style="padding-right: 70px; width: 260px;">
-			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
-
 				</div>
 				<div class="popup__fieldnoi email" style="text-align: left">					
-					<input type="text" name="" id="inputemail" placeholder="email" style="padding-right: 70px; width: 260px;">
-			 		<a href="#" class="popup__forgot" style="right: 20px">forgot</a>
+					<input type="text" name="" id="inputemail" placeholder="email" style="padding-right: 70px; width: 260px;">			 		
 				</div>
 			</div>
 			
@@ -699,15 +549,16 @@
 	<!-- BEGIN confnewpass -->
 	<div id="confnewpass">	
 		<div class="container">
-			<div class="popup__header header-pass-forg">
-				Password forgotten
+			<div class="popup__header">
+				Login
 			</div>
 
 			<div class="popup__divider"></div>
 
-			<div class="popup__check-pass">
+			<div class="popup__check">
+				<span>FORGOT PASSWORD</span>
 				<p>
-					Please choose a new password.		
+					Please type in new password
 				</p>
 			</div>
 

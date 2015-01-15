@@ -18,7 +18,7 @@
 		border-bottom: 1px solid #000
 		height: 1px
 		
-	#account, #cashier, #register, #confemail, #emailconflink, #login, #forgotusername, #forgotusernameconf, #forgotpass, #confnewpass, #forgotpassconf, #loginerror, #loginconfirmation, #frasqe, #payin
+	#account, #cashier, #register, #confemail, #emailconflink, #login, #forgotusername, #forgotusernameconf, #forgotpass, #confnewpass, #forgotpassconf, #loginerror, #loginconfirmation, #frasqe, #payin, #forgotpassword
 		display: block
 		width: 620px		
 		background: url(../img/popup-bg.png)
@@ -84,6 +84,14 @@
 				font-size: 19.8px
 				margin-bottom: 15px
 
+			.popup__subtitlesmall
+				font-size: 14.5px
+				margin-top: 10px
+
+			.popup__secretcode
+				color: #ffb20a
+				text-transform: none
+
 			.popup__option
 				font-size: 17px
 				margin-top: 20px			
@@ -91,6 +99,8 @@
 
 			.popup__status
 				font-size: 17px
+				+museosans				
+				margin-top: 40px
 
 			.install
 				margin-top: 6px
@@ -404,6 +414,7 @@
 
 		.is-error
 			background: #b72c1a
+			text-shadow: 1px -1px 1px #000
 			
 		.reg-error
 			background: #b72c1a

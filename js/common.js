@@ -18,11 +18,21 @@ head.ready(function() {
 
 		
 		$('.scrollbar-style').tinyscrollbar();
-		$('.bb2, .bb3, .bb4').hide(); 
+		$('.bb2, .bb3, .bb4, .hideblock').hide(); 
 
 
 		$(".switch").checkable();
+		
+		$('.switch').click(function(event) {			
+			if($(this).find("input[type=checkbox].ui-checkable").prop("checked") == 1) {
+				$(this).parent().find('.hideblock').show();				
+			}
+			else {
+				$(this).parent().find('.hideblock').hide();				
+			}
 
+			return false;
+		});
 
 
 		$( ".slider" ).slider({
@@ -40,8 +50,18 @@ head.ready(function() {
 		 	change: function(event, ui) {
 		 		$('#text').attr('value', ui.value);
 		 	}
-		});
+		});		
 
+		$('.ahover').hover(
+			function () {
+				$(this).parent().css("margin-bottom", "250px");				
+				$('.gamepreview').show();
+			}, 
+			function () {
+				$(this).parent().css("margin-bottom", "0px");
+				$('.gamepreview').hide();
+			}
+		);
 
 function scrollFixedElements() {
 	    var scroll_left = $(this).scrollLeft();
