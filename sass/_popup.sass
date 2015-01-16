@@ -126,33 +126,37 @@
 				padding: 0 35px
 
 			.popup__calendar
-				margin-bottom: 50px								
+				margin-bottom: 50px
+				overflow: hidden
 
-			.popup__date
-				border-left: 1px solid #0b0b0b
-				border-top: 1px solid #0b0b0b
-				border-right: 1px solid #423d35
-				border-bottom: 1px solid #423d35
-				border-radius: 6px
-				color: #fff
-				+museosans
-				font-size: 16.66px
-				display: inline-block
-				text-align: left
-				background: #141414
-				padding: 5px 0px 6px 15px	
-				width: 215px
-				margin-right: 23px
-
-				.icon-arrow-down
+				.popup__selectdate
+					float: left
 					position: relative
-				
-				.icon-arrow-down:before
-					content: ''
-					position: absolute
-					+s(arrow-down)
-					top: 6px
-					left: 14px
+
+					.popup__date
+						border-left: 1px solid #0b0b0b
+						border-top: 1px solid #0b0b0b
+						border-right: 1px solid #423d35
+						border-bottom: 1px solid #423d35
+						border-radius: 6px
+						color: #fff
+						+museosans
+						font-size: 16.66px
+						display: inline-block
+						text-align: left
+						background: #141414
+						padding: 5px 0px 6px 15px	
+						width: 225px
+						margin-right: 23px
+						cursor: pointer				
+
+					.icon-arrow-down					
+						cursor: pointer
+						position: absolute
+						display: block
+						+s(arrow-down)
+						top: 11px
+						right: 125px
 
 			.tendays
 				text-transform: uppercase

@@ -63,17 +63,31 @@ head.ready(function() {
 			}
 		);
 
-function scrollFixedElements() {
-	    var scroll_left = $(this).scrollLeft();
-	    $(".fixed-element").css({
-	        left: -scroll_left
-	    });
-	}
-	scrollFixedElements();
-	$(window).scroll(function(){
-	    scrollFixedElements()
-	});
+		function scrollFixedElements() {
+		    var scroll_left = $(this).scrollLeft();
+		    $(".fixed-element").css({
+		        left: -scroll_left
+		    });
+		}
+		scrollFixedElements();
+		$(window).scroll(function(){
+		    scrollFixedElements()
+		});
 
-
-
+    $( "#datepicker-start" ).datepicker({
+      defaultDate: "+1w",     
+      selectOtherMonths: true, 
+      showOtherMonths: true,
+      onClose: function( selectedDate ) {
+        $( "#datepicker-end" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#datepicker-end" ).datepicker({
+      defaultDate: "+1w",
+      selectOtherMonths: true,
+      showOtherMonths: true,
+      onClose: function( selectedDate ) {
+        $( "#datepicker-start" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
 });
