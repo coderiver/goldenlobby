@@ -5,18 +5,14 @@ body
 	color: #fff
 	position: relative	
 	width: 62%
-	min-width: 820px	
-	// min-width: 1100px 
-	margin: 0 auto
-	// width: auto
-	// margin-right: 20% 
+	min-width: 820px
+	margin: 0 auto	
 
 .button-md		
 	+museosans
 	font-weight: 100 
 	background: #ffb20a
 	text-align: center
-	// padding: 2px 0px
 	height: 27px 
 	line-height: 27px 
 	color: #fff
@@ -36,14 +32,12 @@ body
 	background: #e09b03
 
 .header	
-	background: url(../img/header-bg.png)
+	background: image-url("header-bg.png")
 	height: 223px
 	z-index: 700	
-	position: fixed
-	// width: 62%
+	position: fixed	
 	width: 100% 
-	min-width: 820px
-	// overflow: hidden
+	min-width: 820px	
 
 	.logo
 		margin-left: 55px
@@ -80,21 +74,21 @@ body
 			a:hover
 				color: #ffb10b
 
-		.nav-slots
+		.nav-slots			
 			width: 270px			
-			background: url(../img/icons/nav-border.png) right 2px no-repeat
 
-		.nav-slots:after
+		.nav-slots:after			
 			left: 91px
 		
 		.nav-faq
-			width: 194px
-			background: url(../img/icons/nav-border.png) right 2px no-repeat
+			+s(nav-border)
+			width: 194px			
 
 		.nav-faq:after
 			left: 53px
 
 		.nav-contacts
+			+s(nav-border)
 			width: 280px
 
 			a
@@ -108,10 +102,6 @@ body
 	background: #131313	
 	position: relative
 	padding: 248px 5% 48px	
-	// padding-top: 248px 
-	// margin: 0 auto
-	// margin: 0 5%
-	// width: 90%  
 
 .divider
 	height: 1px
@@ -540,7 +530,7 @@ body
 	z-index: 700
 	
 	.userbox__login		
-		background: url(../img/login-bg.png) no-repeat
+		background: image-url("login-bg.png") no-repeat
 		height: 137px
 		padding-top: 5px
 		text-align: center
@@ -576,7 +566,7 @@ body
 		li
 			position: relative
 			margin-left: 3px			
-			width: 91%
+			width: 91%			
 
 			a
 				color: #fff
@@ -585,7 +575,7 @@ body
 				padding-left: 58px
 				margin-left: 18px				
 				border-radius: 3px				
-				background: url(../img/icons/user-button.png) no-repeat
+				background: image-url("user-button.png") no-repeat
 				background-size: 100% 100%
 
 			a:hover
@@ -593,6 +583,8 @@ body
 
 		.userbox-text
 			padding-left: 75px
+			width: 51%
+			overflow: hidden
 
 		.font-md
 			font-size: 14px		
@@ -606,6 +598,10 @@ body
 			position: absolute
 			left: 35px
 			top: 0px
+
+		.icon-bonus
+			margin-top: 30px
+			margin-bottom: 20px
 
 		.icon-bonus:before
 			content: ''
@@ -653,6 +649,6 @@ body
 		width: 300px
 		padding: 10px 20px
 		font-size: 19px
-		background: url(../img/icons/opacity-bg.png)
+		background: image-url("icons/opacity-bg.png")
 		border-radius: 4px
 		text-align: justify

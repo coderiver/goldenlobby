@@ -47,6 +47,10 @@
 // p
 // 	+jpg(bla)
 
+$path: '../img/'
+@function image-url($file)
+	@return url($path + $file)
+
 +font(museosans, MuseoSans-500)
 =museosans
 	font-family: "museosans", Arial, sans-serif
@@ -58,6 +62,10 @@
 +font(helvneue, HelveticaNeue)
 =helvneue
 	font-family: "helvneue", Arial, sans-serif
+
++font(helvb, Helvetica-Bold)
+=helvb
+	font-family: "helvb", Arial, sans-serif
 
 +font(lbrush, levibrush)
 =lbrush

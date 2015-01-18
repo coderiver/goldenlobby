@@ -75,15 +75,14 @@ head.ready(function() {
 		});
 
     $( "#datepicker-start" ).datepicker({
-      defaultDate: "+1w",     
+
       selectOtherMonths: true, 
       showOtherMonths: true,
       onClose: function( selectedDate ) {
         $( "#datepicker-end" ).datepicker( "option", "minDate", selectedDate );
       }
     });
-    $( "#datepicker-end" ).datepicker({
-      defaultDate: "+1w",
+    $( "#datepicker-end" ).datepicker({      
       selectOtherMonths: true,
       showOtherMonths: true,
       onClose: function( selectedDate ) {
