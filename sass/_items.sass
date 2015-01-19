@@ -66,6 +66,7 @@
 	transition: background-color cubic-bezier(.25, .46, .45, .94) .2s
 	position: relative
 	top: -3px
+	cursor: pointer
 
 .switch .helper		
 	+s(toggle-bg)
@@ -78,6 +79,13 @@
 	-webkit-transition-timing-function: cubic-bezier(.25, .46, .45, .94)
 	-moz-transition-timing-function: cubic-bezier(.25, .46, .45, .94)
 	transition-timing-function: cubic-bezier(.25, .46, .45, .94)
+
+.switch-label-top
+	position: absolute
+	top: -30px
+	left: -155px
+	width: 354px
+	cursor: pointer
 
 .switch.ui-checked
 	border-color: #4cd864
@@ -109,6 +117,7 @@
 	top: 1px	
 	z-index: 700	
 	+s(slider-button)
+	cursor: pointer
 
 #slider-result
 	color: #ffc600

@@ -52,17 +52,6 @@ head.ready(function() {
 		 	}
 		});		
 
-		$('.ahover').hover(
-			function () {
-				$(this).parent().css("margin-bottom", "250px");				
-				$('.gamepreview').show();
-			}, 
-			function () {
-				$(this).parent().css("margin-bottom", "0px");
-				$('.gamepreview').hide();
-			}
-		);
-
 		function scrollFixedElements() {
 		    var scroll_left = $(this).scrollLeft();
 		    $(".fixed-element").css({
