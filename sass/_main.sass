@@ -33,19 +33,26 @@ body
 	background: #e09b03
 
 .header	
-	background: image-url("header-bg.png")
 	height: 223px
 	z-index: 700	
-	position: fixed	
-	width: 100% 
+	position: fixed
+	width: 100%
 	min-width: 820px	
+
+.header__inner
+	width: 62%
+	min-width: 1150px
+	height: 223px
+	background: image-url("header-bg.png") no-repeat	
+	margin: 0 auto
+	position: relative
 
 	.logo
 		margin-left: 55px
 		margin-top: 30px
 		float: left
 
-	.header__nav
+	.header__nav		
 		position: absolute
 		top: 83px
 		left: 360px
@@ -99,7 +106,7 @@ body
 			left: 75px
 
 .content
-	background: #131313	
+	background: #131313
 	position: relative
 	padding: 248px 5% 48px	
 
@@ -170,8 +177,7 @@ body
 					font-size: 13px
 					font-size: 1vw
 					margin-top: -0.5vw
-					margin-bottom: 1vw
-				
+					margin-bottom: 1vw				
 
 	#next, #prev
 		display: block
