@@ -103,6 +103,11 @@ body { min-width: 1150px; }
 .bigslider .bigslider__item .bigslider__apache { top: -6px; left: 40px; }
 .bigslider .bigslider__item .bigslider__garden { top: -10px; left: 20px; }
 .bigslider .bigslider__item .bigslider__story { top: 0px; left: -8px; }
+.bigslider .bigslider__item .bigslider__18plus { top: 32px; left: 68px; }
+.bigslider .bigslider__item .bigslider__vitamin { top: 20px; left: -10px; }
+.bigslider .bigslider__item .bigslider__genie { top: 10px; left: 12px; }
+.bigslider .bigslider__item .bigslider__fort { top: 6px; left: 21px; }
+.bigslider .bigslider__item .bigslider__gamblers { top: 32px; left: -25px; }
 .bigslider .bigslider__item .bigslider__link { text-align: center; position: absolute; bottom: 0px; left: 50px; }
 .bigslider .bigslider__item .bigslider__link a { display: inline-block; border-radius: 2px; width: 85px; height: 27px; color: #fff; font-family: "museosans", Arial, sans-serif; text-transform: uppercase; font-weight: bold; font-size: 14px; padding-top: 10px; border-top: 1px solid #605d5e; margin-left: 3px; margin-right: 3px; background: #322d30; }
 .bigslider .bigslider__item .bigslider__link a:hover { color: #ffb10b; }
@@ -432,3 +437,15 @@ body { min-width: 1150px; }
 .slot-marketplace { background: url("../img/marketplace-bg.png"); width: 100%; height: 688px; max-width: 1062px; margin-top: 12px; }
 .slot-marketplace .slot__butttons { top: 310px; left: 185px; }
 .slot-marketplace .gamepreview__text { width: 360px; bottom: 45px; left: 87px; line-height: 20px; background: url("../img/icons/opacity-bg-2.png"); }
+
+.slot-gamblers { background: url("../img/gamblers-bg.jpg"); width: 100%; height: 647px; max-width: 1062px; }
+.slot-gamblers .slot__butttons { top: 290px; left: 185px; }
+.slot-gamblers .gamepreview__text { width: 360px; bottom: 32px; left: 87px; line-height: 22px; background: url("../img/icons/opacity-bg-2.png"); }
+
+.slot-fort { background: url("../img/fort-bg.png"); width: 100%; height: 647px; max-width: 1113px; }
+.slot-fort .slot__butttons { top: 290px; left: 200px; }
+.slot-fort .gamepreview__text { width: 360px; bottom: 32px; left: 100px; line-height: 22px; background: url("../img/icons/opacity-bg-2.png"); }
+
+.slot-domina { background: url("../img/domina-bg.jpg"); width: 100%; height: 646px; max-width: 1062px; }
+.slot-domina .slot__butttons { top: 260px; left: 185px; }
+.slot-domina .gamepreview__text { width: 360px; bottom: 32px; left: 87px; line-height: 22px; background: url("../img/icons/opacity-bg-2.png"); }
