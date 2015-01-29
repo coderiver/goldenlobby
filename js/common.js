@@ -64,18 +64,29 @@ head.ready(function() {
 		});
 
     $( "#datepicker-start" ).datepicker({
-
       selectOtherMonths: true, 
       showOtherMonths: true,
       onClose: function( selectedDate ) {
         $( "#datepicker-end" ).datepicker( "option", "minDate", selectedDate );
       }
     });
+
     $( "#datepicker-end" ).datepicker({      
       selectOtherMonths: true,
       showOtherMonths: true,
       onClose: function( selectedDate ) {
         $( "#datepicker-start" ).datepicker( "option", "maxDate", selectedDate );
       }
-    });
+    });    
+
+	$(".bigslider__item .ahover").hover(function(){
+		$('.bigslider__item').removeClass("popup__down");
+		$(this).parent().addClass("popup__down");		
+		$('.gamepreview').insertAfter($(this).parent());
+		$(this).parents('.slotdown').find('.gamepreview').show();
+		},
+		function(){
+			$(this).parent().removeClass("popup__down");
+			$(this).parents('.slotdown').find('.gamepreview').hide();
+	});
 });

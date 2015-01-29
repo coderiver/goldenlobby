@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; }
 
 body, html { height: 100%; }
 
@@ -85,7 +85,7 @@ body { min-width: 1150px; }
 
 .bigslider { text-align: center; margin-top: 10px; margin-bottom: 48px; position: relative; }
 .bigslider .bigslider__block { text-align: center; width: 100%; }
-.bigslider .bigslider__item { background: url("../img/frame.png") no-repeat 0 0; width: 287px; height: 263px; display: inline-block; margin-top: 35px; text-align: center; position: relative; margin-left: 3%; margin-right: 3%; position: relative; vertical-align: top; }
+.bigslider .bigslider__item { background: url("../img/frame.png") no-repeat 0 0; width: 287px; height: 263px; display: inline-block; margin-top: 35px; text-align: center; position: relative; margin-left: 3%; margin-right: 3%; vertical-align: top; }
 .bigslider .bigslider__item img { position: absolute; }
 .bigslider .bigslider__item .bigslider__marketplace { top: -13px; left: -11px; }
 .bigslider .bigslider__item .bigslider__pirate { top: 0px; left: -5px; }
@@ -170,9 +170,6 @@ body { min-width: 1150px; }
 .userbox .userbox__user .icon-cash:before { content: ""; background: url('../img/icons-s082c9ad604.png') 0 -112px no-repeat; width: 12px; height: 20px; position: absolute; left: 16%; top: 10px; }
 .userbox .userbox__user .icon-account:before { content: ""; background: url('../img/icons-s082c9ad604.png') 0 0 no-repeat; width: 19px; height: 19px; position: absolute; left: 14.5%; top: 10px; }
 .userbox .userbox__user .icon-logout:before { content: ""; background: url('../img/icons-s082c9ad604.png') 0 -535px no-repeat; width: 18px; height: 20px; position: absolute; left: 14.5%; top: 10px; }
-
-.gamepreview { background: url("../img/gamepreview.png") no-repeat 0 0; width: 987px; height: 263px; padding-left: 66px; padding-top: 43px; display: none; position: absolute; }
-.gamepreview .gamepreview__text { width: 300px; padding: 10px 20px; font-size: 19px; background: url("../img/icons/opacity-bg.png"); border-radius: 4px; text-align: justify; }
 
 .nav-slot { font-family: "geosansL", Arial, sans-serif; font-size: 24.9px; text-transform: uppercase; color: #fff; margin-top: 70px; margin-bottom: 30px; }
 .nav-slot a { color: #fff; }
@@ -372,7 +369,14 @@ body { min-width: 1150px; }
 .slot a { display: block; width: 190px; height: 40px; line-height: 40px; text-align: center; background: #ffb20a; border-radius: 5px; color: #fff; font-family: "museosans", Arial, sans-serif; font-size: 24px; margin-bottom: 18px; box-shadow: 4px 4px 6px #2f0b07; padding-right: 15px; position: relative; }
 .slot a:after { content: ""; background: url('../img/icons-s082c9ad604.png') 0 -748px no-repeat; width: 24px; height: 24px; position: absolute; top: 9px; right: 18px; }
 .slot a:hover { background: #e09b03; }
-.slot .gamepreview__text { font-family: "museosans", Arial, sans-serif; width: 340px; padding: 17px 20px; font-size: 20.8px; background: url("../img/icons/opacity-bg.png"); border-radius: 4px; position: absolute; bottom: 38px; left: 34px; letter-spacing: 1.3px; line-height: 25px; }
+
+.popup__down { margin-bottom: 300px; }
+
+.slotdown { position: relative; overflow: hidden; }
+.slotdown .gamepreview { padding-left: 7%; display: none; position: absolute; margin-top: -250px; z-index: 500; width: 100%; height: 208px; background: url("../img/gamepreview.png") no-repeat; background-size: 93% 100%; }
+.slotdown .gamepreview table { width: 35%; vertical-align: middle; height: 100%; }
+.slotdown .gamepreview table td { width: 100%; }
+.slotdown .gamepreview__text { padding: 10px 20px; line-height: 1.6vh; background: url("../img/icons/opacity-bg-2.png"); border-radius: 4px; text-align: justify; font-size: 19px; font-size: 1.6vh; font-weight: bold; }
 
 .slot-apache { width: 100%; height: 647px; max-width: 1042px; background: url("../img/apache-bg.jpg"); }
 .slot-apache .slot__butttons { top: 295px; left: 125px; }
