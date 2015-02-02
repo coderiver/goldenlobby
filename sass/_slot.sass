@@ -34,6 +34,19 @@
 	a:hover
 		background: #e09b03	
 
+	.gamepreview__text
+		+museosans
+		width: 340px
+		padding: 17px 20px
+		font-size: 20.8px
+		background: image-url("icons/opacity-bg.png")
+		border-radius: 4px		
+		position: absolute
+		bottom: 38px
+		left: 34px
+		letter-spacing: 1.3px
+		line-height: 25px
+
 .popup__down		
 	margin-bottom: 300px
 
@@ -42,33 +55,42 @@
 	overflow: hidden
 
 	.gamepreview		
-		padding-left: 7%
 		display: none
 		position: absolute
 		margin-top: -250px		
 		z-index: 500
-		width: 100%
-		height: 251px		
-		background: image-url("gamepreview.png") no-repeat		
-		background-size: 93% 100%
+		width: 100%		
 
 		table
+			margin-left: 7%
 			width: 35%
 			vertical-align: middle
-			height: 100%
+			height: 94%
 
 			td
-				width: 100%
+				width: 100%					
+				vertical-align: middle
+
 			
-	.gamepreview__text		
-		padding: 10px 20px
-		line-height: 1.1vW
-		background: image-url("icons/opacity-bg-2.png")
-		border-radius: 4px
-		text-align: justify
-		font-size: 19px
-		font-size: 1.1vW
-		font-weight: bold
+				.gamepreview__text		
+					padding: 10px 20px
+					line-height: 1.1vW
+					background: image-url("icons/opacity-bg-2.png")
+					border-radius: 4px
+					text-align: justify
+					font-size: 19px
+					font-size: 1.1vW
+					font-weight: bold
+
+	.gamepreview__genie
+		height: 263px
+		background: image-url("genie-gp.png") no-repeat
+		background-size: 100% 95%		
+
+	.gamepreview__vitamin
+		height: 263px
+		background: image-url("vitamin-gp.png") no-repeat
+		background-size: 100% 95%
 
 .slot-apache
 	width: 100%	
@@ -237,7 +259,7 @@
 	.gamepreview__text		
 		width: 360px
 		bottom: 38px		
-		left: 75px		
+		left: 70px		
 		line-height: 20px
 		background: image-url("icons/opacity-bg-2.png")
 
@@ -294,8 +316,8 @@
 
 .slot-mexico
 	width: 100%	
-	height: 662px
-	max-width: 1062px	
+	height: 647px
+	max-width: 1042px	
 	background: image-url("mexico-bg.jpg")	
 
 	.slot__butttons		
@@ -312,8 +334,8 @@
 .slot-disko
 	background: image-url("disko-bg.jpg")
 	width: 100%	
-	height: 662px
-	max-width: 1062px
+	height: 647px
+	max-width: 1042px
 
 	.slot__butttons		
 		top: 305px
@@ -393,4 +415,38 @@
 		bottom: 32px		
 		left: 87px		
 		line-height: 22px
+		background: image-url("icons/opacity-bg-2.png")
+
+.slot-genie
+	width: 100%	
+	height: 647px
+	max-width: 1042px
+	background: image-url("genie-bg.jpg")
+
+	.slot__butttons		
+		top: 265px
+		left: 185px
+
+	.gamepreview__text		
+		width: 360px
+		bottom: 32px		
+		left: 87px		
+		line-height: 22px
+		background: image-url("icons/opacity-bg-2.png")
+
+.slot-vitamin
+	width: 100%	
+	height: 647px
+	max-width: 1042px
+	background: image-url("vitamin-bg.jpg")
+
+	.slot__butttons		
+		top: 260px
+		left: 195px
+
+	.gamepreview__text		
+		width: 360px
+		bottom: 32px		
+		left: 87px		
+		line-height: 21px
 		background: image-url("icons/opacity-bg-2.png")

@@ -79,14 +79,14 @@ head.ready(function() {
       }
     });    
 
-	$(".bigslider__item .ahover").hover(function(){
-		$('.bigslider__item').removeClass("popup__down");
-		$(this).parent().addClass("popup__down");		
-		$('.gamepreview').insertAfter($(this).parent());
-		$(this).parents('.slotdown').find('.gamepreview').show();
-		},
-		function(){
-			$(this).parent().removeClass("popup__down");
-			$(this).parents('.slotdown').find('.gamepreview').hide();
-	});
+	//$(".bigslider__item .ahover").hover(function(){
+	//	$('.bigslider__item').removeClass("popup__down");
+	//	$(this).parent().addClass("popup__down");		
+	//	$('.gamepreview').insertAfter($(this).parent());
+	//	$(this).parents('.slotdown').find('.gamepreview').show();
+	//	},
+	//	function(){
+	//		$(this).parent().removeClass("popup__down");
+	//		$(this).parents('.slotdown').find('.gamepreview').hide();
+	//});
 });
