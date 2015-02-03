@@ -79,19 +79,18 @@ head.ready(function() {
       }
     });    
 
-	$(".bigslider__item").hover(function(){	
-		showblock = $(this).next('.gamepreview');
-		showblock.show();	
+	$(".bigslider__item").hover(function(){
+		showblock = $(this).next('.gamepreview');		
 		showblock.find('table').css('height', showblock.css('height'));
 		$(this).css('margin-bottom', showblock.find('table').css('height'));
 		m = - parseInt(showblock.find('table').css('height')) + 23;
 		showblock.css('margin-top', m);
-
 		sub = - parseInt(showblock.css('width')) / 2;		
 		showblock.css('margin-left', sub);
+		showblock.show();
 		},
 		function(){
 			showblock.hide();
-			$(this).css('margin-bottom', '0px');			
+			$('.bigslider__item').css('margin-bottom', '0px');			
 	});
 });
