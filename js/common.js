@@ -79,14 +79,19 @@ head.ready(function() {
       }
     });    
 
-	//$(".bigslider__item .ahover").hover(function(){
-	//	$('.bigslider__item').removeClass("popup__down");
-	//	$(this).parent().addClass("popup__down");		
-	//	$('.gamepreview').insertAfter($(this).parent());
-	//	$(this).parents('.slotdown').find('.gamepreview').show();
-	//	},
-	//	function(){
-	//		$(this).parent().removeClass("popup__down");
-	//		$(this).parents('.slotdown').find('.gamepreview').hide();
-	//});
+	$(".bigslider__item").hover(function(){	
+		showblock = $(this).next('.gamepreview');
+		showblock.show();	
+		showblock.find('table').css('height', showblock.css('height'));
+		$(this).css('margin-bottom', showblock.find('table').css('height'));
+		m = - parseInt(showblock.find('table').css('height')) + 23;
+		showblock.css('margin-top', m);
+
+		sub = - parseInt(showblock.css('width')) / 2;		
+		showblock.css('margin-left', sub);
+		},
+		function(){
+			showblock.hide();
+			$(this).css('margin-bottom', '0px');			
+	});
 });
